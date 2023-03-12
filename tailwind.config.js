@@ -1,5 +1,5 @@
 /** @type {import("tailwindcss").Config} */
-const colors = require("tailwindcss/colors")
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -7,15 +7,26 @@ module.exports = {
     "./frontend/javascript/**/*.js",
     "./plugins/**/*.rb",
   ],
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography")
-  ],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     extend: {
       colors: {
-        primary: colors.emerald
-      }
+        primary: colors.teal[600],
+        secondary: colors.teal[400],
+        dark: colors.slate[500],
+        gray: colors.zinc[400],
+        "gray-light": colors.zinc[500],
+      },
     },
     fontSize: {
       xs: ["0.8125rem", { lineHeight: "1.5rem" }],
@@ -286,4 +297,4 @@ module.exports = {
       },
     }),
   },
-}
+};
