@@ -1,5 +1,9 @@
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap&family=Inter&display=swap");
+@import "components/burger.css";
+@import "components/navbar.css";

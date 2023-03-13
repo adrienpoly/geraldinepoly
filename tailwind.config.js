@@ -1,5 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
@@ -9,6 +10,10 @@ module.exports = {
   ],
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
   theme: {
+    fontFamily: {
+      serif: ["Oswald", ...defaultTheme.fontFamily.serif],
+      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+    },
     container: {
       center: true,
       padding: {
@@ -43,6 +48,7 @@ module.exports = {
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
+    safelist: ["h1"],
     typography: (theme) => ({
       DEFAULT: {
         css: {

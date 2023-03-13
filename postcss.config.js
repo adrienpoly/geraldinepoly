@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     tailwindcss: {},
+    "tailwindcss/nesting": {},
     "postcss-mixins": {},
     "postcss-color-mod-function": {
       // Uncomment the following to import CSS variables for use in `color-mod`:

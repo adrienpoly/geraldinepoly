@@ -1,10 +1,72 @@
 
-<nav class="w-full flex justify-center py-4">
-  <ul class="flex items-center gap-12 justify-center">
-    <li><a href="<%= relative_url '/' %>">Home</a></li>
-    <li><a href="<%= relative_url '/about' %>">About</a></li>
-    <%= render Logo.new %>
-    <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
-    <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
-  </ul>
+<nav class="hidden w-full grid-cols-[1fr_max-content_1fr] gap-8 py-4 sm:grid lg:gap-12 text-xl text-gray">
+  <div class="flex items-center justify-end gap-8 lg:gap-12">
+    <a href="<%= relative_url '/prestations' %>">Presations</a>
+    <a href="<%= relative_url '/realisations' %>">Réalisations</a>
+  </div>
+  <a href="<%= relative_url '/' %>">
+    <%= render Logo.new class: "h-32 fill-primary" %>
+  </a>
+  <div class="flex items-center justify-start gap-8 lg:gap-12">
+    <a href="<%= relative_url '/a-propos' %>">À propos</a>
+    <a href="<%= relative_url '/contact' %>">Contact</a>
+  </div>
+</nav>
+
+
+<nav class="relative flex h-full w-full items-center justify-between gap-4 p-4 sm:hidden">
+  <%= link_to "Geraldine POLY", "/" %>
+      <%# <Link href="/">
+        <h1>Geraldine POLY</h1>
+        {/* <Cat className="w-8 fill-teal-600" /> */}
+      </Link> %>
+      <%# {/* <div class="text-display text-md text-center text-teal-600">
+        <span>Une décoration qui fait du bien</span>
+      </div> */}
+
+      {/* tailwind animated burger */}
+      <Burger /> %>
+  <details class="inline-block text-left">
+    <summary class="list-none" aria-haspopup="menu" role="button">
+      <div class="burger">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+    </summary>
+
+    <details-menu
+      role="menu"
+      class="absolute left-0 mt-4 w-screen bg-white py-8 shadow transition duration-1000 focus:outline-none"
+    >
+      <div class="flex h-full flex-col items-center justify-center gap-8 sm:justify-between" role="none">
+        <%= link_to "Prestations", "/prestations", data: { menu_button_text: false } %>
+        <%# <a
+          class="font-regular font-body text-lg text-gray"
+          href="/presentation"
+          role="menuitem"
+          data-menu-button-text
+        >
+          Presations
+        </a>
+        <a
+          class="font-regular font-body text-lg text-gray"
+          href="/gua"
+          role="menuitem"
+          data-menu-button-text
+        >
+          Réalisations
+        </a>
+        <a
+          class="font-regular font-body text-lg text-gray"
+          href="/contact"
+          role="menuitem"
+          data-menu-button-text
+        >
+          Contact
+        </a> %>
+        <%# <ContactIcons /> %>
+      </div>
+    </details-menu>
+  </details>
 </nav>

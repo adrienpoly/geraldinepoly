@@ -1,0 +1,42 @@
+@layer components {
+  details > summary.list-none::-webkit-details-marker,
+  details > summary.list-none::marker {
+    display: none;
+  }
+
+  details {
+    .burger {
+      @apply relative flex h-6 w-6 cursor-pointer items-center justify-end;
+      .line {
+        @apply absolute h-[1px] w-full rounded-full bg-dark;
+        transition: all 0.3s ease-in-out;
+      }
+      .line-1 {
+        @apply translate-y-[0.6rem];
+      }
+      .line-2 {
+        @apply w-2/3;
+      }
+      .line-3 {
+        @apply translate-y-[-0.6rem];
+      }
+    }
+    detail-menu {
+      a {
+        @apply text-lg text-gray;
+      }
+    }
+  }
+
+  details[open] {
+    .line-1 {
+      @apply translate-x-[-0.25rem] translate-y-0 rotate-[135deg];
+    }
+    .line-2 {
+      @apply hidden;
+    }
+    .line-3 {
+      @apply translate-x-[-0.25rem] translate-y-0 rotate-[-135deg];
+    }
+  }
+}

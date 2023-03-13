@@ -1,0 +1,7 @@
+@layer components {
+  nav {
+    a {
+      @apply no-underline;
+    }
+  }
+}
