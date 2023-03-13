@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ["Oswald", ...defaultTheme.fontFamily.serif],
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: ["Cera Pro", ...defaultTheme.fontFamily.sans],
     },
     container: {
       center: true,

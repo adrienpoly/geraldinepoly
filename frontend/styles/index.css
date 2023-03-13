@@ -4,6 +4,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap&family=Inter&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap&family=Inter&display=swap"); */
+@import "fonts.css";
 @import "components/burger.css";
 @import "components/navbar.css";
