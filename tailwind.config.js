@@ -94,32 +94,23 @@ module.exports = {
           "h2, h3, h4": {
             color: "var(--tw-prose-headings)",
             fontWeight: theme("fontWeight.semibold"),
+            marginBottom: theme("spacing.4"),
+            marginTop: theme("spacing.4"),
           },
           h2: {
             fontSize: theme("fontSize.2xl")[0],
             lineHeight: theme("lineHeight.7"),
-            marginTop: theme("spacing.20"),
-            marginBottom: theme("spacing.4"),
           },
           h3: {
             fontSize: theme("fontSize.xl")[0],
             lineHeight: theme("lineHeight.7"),
-            marginTop: theme("spacing.16"),
-            marginBottom: theme("spacing.4"),
           },
           h4: {
             fontSize: theme("fontSize.base")[0],
             lineHeight: theme("lineHeight.7"),
-            marginTop: theme("spacing.12"),
-            marginBottom: theme("spacing.4"),
           },
           ":is(h2, h3, h4) + *": {
             marginTop: 0,
-          },
-
-          // Images
-          img: {
-            borderRadius: theme("borderRadius.3xl"),
           },
 
           // Inline elements
@@ -139,46 +130,6 @@ module.exports = {
           strong: {
             color: "var(--tw-prose-bold)",
             fontWeight: theme("fontWeight.semibold"),
-          },
-          code: {
-            display: "inline-block",
-            color: "var(--tw-prose-code)",
-            fontSize: theme("fontSize.sm")[0],
-            fontWeight: theme("fontWeight.semibold"),
-            backgroundColor: "var(--tw-prose-code-bg)",
-            borderRadius: theme("borderRadius.lg"),
-            paddingLeft: theme("spacing.1"),
-            paddingRight: theme("spacing.1"),
-          },
-          "a code": {
-            color: "inherit",
-          },
-          ":is(h2, h3) code": {
-            fontWeight: theme("fontWeight.bold"),
-          },
-
-          // Quotes
-          blockquote: {
-            color: theme("colors.zinc.500"),
-            paddingLeft: theme("spacing.6"),
-            borderLeftWidth: theme("borderWidth.2"),
-            borderLeftColor: "var(--tw-prose-quote-borders)",
-          },
-          "blockquote strong": {
-            color: theme("colors.zinc.600"),
-          },
-
-          // Figures
-          "figure.rounded-none img": {
-            borderRadius: 0,
-          },
-          figcaption: {
-            color: "var(--tw-prose-captions)",
-            lineHeight: theme("lineHeight.6"),
-            marginTop: theme("spacing.3"),
-          },
-          "figcaption > p": {
-            margin: 0,
           },
 
           // Lists
@@ -215,28 +166,6 @@ module.exports = {
             marginBottom: theme("spacing.3"),
           },
 
-          // Code blocks
-          pre: {
-            color: "var(--tw-prose-pre-code)",
-            fontSize: theme("fontSize.sm")[0],
-            fontWeight: theme("fontWeight.medium"),
-            backgroundColor: "var(--tw-prose-pre-bg)",
-            borderRadius: theme("borderRadius.3xl"),
-            padding: theme("spacing.8"),
-            overflowX: "auto",
-            border: "1px solid",
-            borderColor: "var(--tw-prose-pre-border)",
-          },
-          "pre code": {
-            display: "inline",
-            color: "inherit",
-            fontSize: "inherit",
-            fontWeight: "inherit",
-            backgroundColor: "transparent",
-            borderRadius: 0,
-            padding: 0,
-          },
-
           // Horizontal rules
           hr: {
             marginTop: theme("spacing.20"),
@@ -247,57 +176,6 @@ module.exports = {
               marginLeft: `calc(${theme("spacing.12")} * -1)`,
               marginRight: `calc(${theme("spacing.12")} * -1)`,
             },
-          },
-
-          // Tables
-          table: {
-            width: "100%",
-            tableLayout: "auto",
-            textAlign: "left",
-            fontSize: theme("fontSize.sm")[0],
-          },
-          thead: {
-            borderBottomWidth: "1px",
-            borderBottomColor: "var(--tw-prose-th-borders)",
-          },
-          "thead th": {
-            color: "var(--tw-prose-headings)",
-            fontWeight: theme("fontWeight.semibold"),
-            verticalAlign: "bottom",
-            paddingBottom: theme("spacing.2"),
-          },
-          "thead th:not(:first-child)": {
-            paddingLeft: theme("spacing.2"),
-          },
-          "thead th:not(:last-child)": {
-            paddingRight: theme("spacing.2"),
-          },
-          "tbody tr": {
-            borderBottomWidth: "1px",
-            borderBottomColor: "var(--tw-prose-td-borders)",
-          },
-          "tbody tr:last-child": {
-            borderBottomWidth: 0,
-          },
-          "tbody td": {
-            verticalAlign: "baseline",
-          },
-          tfoot: {
-            borderTopWidth: "1px",
-            borderTopColor: "var(--tw-prose-th-borders)",
-          },
-          "tfoot td": {
-            verticalAlign: "top",
-          },
-          ":is(tbody, tfoot) td": {
-            paddingTop: theme("spacing.2"),
-            paddingBottom: theme("spacing.2"),
-          },
-          ":is(tbody, tfoot) td:not(:first-child)": {
-            paddingLeft: theme("spacing.2"),
-          },
-          ":is(tbody, tfoot) td:not(:last-child)": {
-            paddingRight: theme("spacing.2"),
           },
         },
       },

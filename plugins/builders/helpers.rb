@@ -6,7 +6,7 @@ class Builders::Helpers < SiteBuilder
           #{yield if block_given?}
         </#{tag}>
       HTML
-      safe html
+      html.html_safe
     end
   end
 end

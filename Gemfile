@@ -41,3 +41,5 @@ group :test, optional: true do
   gem "shoulda"
   gem "rails-dom-testing"
 end
+
+gem "ruby-lsp", "~> 0.4.2"

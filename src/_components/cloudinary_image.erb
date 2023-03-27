@@ -1,0 +1,4 @@
+<picture>
+  <%= content_tag :source, type: "image/webp", srcset: srcset %>
+  <%= content_tag :img, src: src, width: width, srcset: srcset_img , **kwargs %>
+</picture>
