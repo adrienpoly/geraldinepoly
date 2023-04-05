@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<%
+  projects = collections.projects.resources
+  next_project = projects[projects.index(resource) + 1]
+  previous_project = (projects.index(resource) - 1) >= 0 ? projects[projects.index(resource) - 1] : nil
+%>
+
+<h1 class="text-center text-primary"><%= data.title %></h1>
+
+<%= yield %>
+
+<div class="flex">
+  <% if previous_project %>
+    <%= link_to "Projet précédent", previous_project.relative_url, class: "btn btn-primary mr-auto" %>
+  <% end %>
+
+  <% if next_project %>
+    <%= link_to "Projet suivant", next_project.relative_url, class: "btn btn-primary ml-auto" %>
+  <% end %>
+</div>

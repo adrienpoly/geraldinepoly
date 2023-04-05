@@ -1,0 +1,27 @@
+---
+layout: project
+title: "Chambre d'enfant Bordeaux"
+image_id: tom/GP-Surf-8261_FA
+---
+
+<div class="flex flex-col gap-4">
+  <div class="text-gray">Reprehenderit et et velit aliquip Lorem ipsum ullamco excepteur ipsum nulla tempor labore. Exercitation id aute magna aliqua officia minim fugiat. Consequat ad reprehenderit do ex fugiat est occaecat. Nisi nisi incididunt labore ea magna culpa minim. Eiusmod amet dolor ipsum esse fugiat consequat. Culpa proident nostrud magna Lorem quis fugiat amet in esse incididunt nulla do eu.</div>
+  <div class="flex md:grid-cols-2 gap-4">
+    <%= render CloudinaryImage.new(image_id: "chambre/avant_après_chambre", width: 1200, height: 600) %>
+  </div>
+
+  <%= render CloudinaryImage.new(image_id: "tom/GP-Surf-8261_FA", width: 1200, shadow: true) %>
+
+  <div class="flex gap-4">
+    <%= render CloudinaryImage.new(image_id: "tom/GP-Surf-8264_FA", height: 800, width: 600, shadow: true) %>
+    <%= render CloudinaryImage.new(image_id: "chambre/papier_peint", height: 800, width: 600, shadow: true) %>
+  </div>
+
+  <div class="flex justify-center gap-4">
+    <%= render CloudinaryImage.new(image_id: "chambre/poignees", width: 600, height: 600, shadow: true) %>
+    <%= render CloudinaryImage.new(image_id: "chambre/bibliotheque", width: 600, height: 600, shadow: true) %>
+  </div>
+</div>
+
+
+

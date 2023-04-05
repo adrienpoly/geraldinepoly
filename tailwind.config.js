@@ -27,10 +27,12 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.teal[600],
+        "primary-dark": colors.teal[700],
         secondary: colors.teal[400],
         dark: colors.slate[500],
         gray: colors.zinc[400],
         "gray-light": colors.zinc[500],
+        "gray-lightest": colors.zinc[200],
       },
     },
     fontSize: {
@@ -96,6 +98,10 @@ module.exports = {
             fontWeight: theme("fontWeight.semibold"),
             marginBottom: theme("spacing.4"),
             marginTop: theme("spacing.4"),
+          },
+          h1: {
+            fontSize: theme("fontSize.4xl")[0],
+            lineHeight: theme("lineHeight.7"),
           },
           h2: {
             fontSize: theme("fontSize.2xl")[0],

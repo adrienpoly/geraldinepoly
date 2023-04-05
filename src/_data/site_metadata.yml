@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Your awesome title
-tagline: This site is totally awesome
+title: Geraldine POLY
+tagline: Coach décoration à Bordeaux
 email: your-email@example.com
 description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  Geraldine POLY est un décoratrice et consultante Feng Shui à Bordeaux. Elle propose des services de coach décoration pour des espace ou on se sent bien.

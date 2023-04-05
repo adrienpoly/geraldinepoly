@@ -7,4 +7,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap&family=Inter&display=swap"); */
 @import "fonts.css";
 @import "components/burger.css";
+@import "components/button.css";
 @import "components/navbar.css";

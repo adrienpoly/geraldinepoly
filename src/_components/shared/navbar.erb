@@ -2,7 +2,8 @@
 <nav class="hidden w-full grid-cols-[1fr_max-content_1fr] gap-8 py-4 sm:grid lg:gap-12 text-xl text-gray">
   <div class="flex items-center justify-end gap-8 lg:gap-12">
     <a href="<%= relative_url '/prestations' %>">Presations</a>
-    <a href="<%= relative_url '/realisations' %>">Réalisations</a>
+    <%= link_to "Réalisations", "/projects" %>
+
   </div>
   <a href="<%= relative_url '/' %>">
     <%= render Logo.new class: "h-32 fill-primary" %>
@@ -40,7 +41,8 @@
       class="absolute left-0 mt-4 w-screen bg-white py-8 shadow transition duration-1000 focus:outline-none"
     >
       <div class="flex h-full flex-col items-center justify-center gap-8 sm:justify-between" role="none">
-        <%= link_to "Prestations", "/prestations", data: { menu_button_text: false } %>
+        <%= link_to "Prestations", "/prestations" %>
+        <%= link_to "Réalisations", "/projects" %>
         <%# <a
           class="font-regular font-body text-lg text-gray"
           href="/presentation"

@@ -6,25 +6,44 @@ permalink: /
 layout: default
 ---
 
-<sections class="pb-32">
-  <section class="flex flex-col items-center gap-4">
+<div class="pb-32">
+  <section class="flex flex-col items-center gap-2 md:gap-4">
     <h1 class="hidden sm:text-3xl md:text-4xl lg:text-5xl tracking-widest sm:block mt-8">GERALDINE POLY</h1>
 
-    <%= render Logo.new class: "w-32 sm:hidden my-4 fill-primary" %>
+    <%= render Logo.new class: "w-40 sm:hidden fill-primary" %>
 
     <h2 class="tracking-widest text-gray text-xl text-center">
       <span class="inline-block">Coach décoration</span>
       <span class="hidden sm:inline-block"> ~ </span>
       <span class="inline-block">Consultante Feng Shui</span>
     </h2>
-    <%= render CloudinaryImage.new(width: 866, height: 375, image_id: "tom/banner1", loading: "lazy") %>
+    <div class="hidden md:block">
+      <%= render CloudinaryImage.new(width: 866, height: 375, image_id: "tom/banner1", loading: "lazy", class: "hidden md:block") %>
+    </div>
+    <div class="md:hidden">
+      <%= render CloudinaryImage.new(width: 866, height: 600, image_id: "tom/banner1", loading: "lazy", class: "md:hidden") %>
+    </div>
 
-    <h2 class="text-2xl tracking-wider text-accent">
+    <h2 class="text-xl tracking-wider text-accent text-center text-gray hidden md:block">
       Une décoration qui fait du bien
     </h2>
-    <div class="mx-auto flex w-full max-w-7xl items-center py-12">
-      <div class="mt-8 sm:flex sm:justify-center md:justify-start">
-        <ContactIcons />
-      </div>
-    </div>
   </section>
+  <section class="pt-12 grid grid-cols-1 md:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
+    <h2>Réalisations</h2>
+    <% collections.projects.resources.last(3).each do |project| %>
+      <span class="flex flex-col">
+        <h3><%= project.data.title %></h3>
+        <a href="<%= project.relative_url %>">
+          <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true) %>
+
+          <span class="mt-4 flex flex-col">
+            <span class="my-2">
+              <%#= project.description %>
+            </span>
+            <a class="text-right">Découvrir</a>
+          </span>
+        </a>
+      </span>
+    <% end %>
+  </section>
+</div>
