@@ -3,7 +3,7 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="<%= data.layout %> <%= data.page_class %>">
+  <body class="<%= data.layout %> <%= data.page_class %>" data-controller="crisp-chat">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main class="container prose min-h-[calc(100vh-10rem)] sm:min-h-[calc(100vh-16rem)]">
