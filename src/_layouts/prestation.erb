@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<%
+  prestations = collections.prestations.resources
+  next_prestation = prestations[prestations.index(resource) + 1]
+  previous_prestation = (prestations.index(resource) - 1) >= 0 ? prestations[prestations.index(resource) - 1] : nil
+%>
+
+<h1 class="text-center text-primary"><%= data.title %></h1>
+
+<%= yield %>
+
+<div class="flex">
+  <% if previous_prestation %>
+    <%= link_to "Prestations précédente", previous_prestation.relative_url, class: "btn btn-primary mr-auto" %>
+  <% end %>
+
+  <% if next_prestation %>
+    <%= link_to "Prestation suivante", next_prestation.relative_url, class: "btn btn-primary ml-auto" %>
+  <% end %>
+</div>

@@ -22,7 +22,9 @@ class CloudinaryImage < Bridgetown::Component
   attr_reader :kwargs, :image_id, :width, :height
 
   def classes
-    "shaddow-lg" if kwargs[:shadow] == true
+    build = [kwargs[:class]&.split(" ")]
+    build << "shadow-lg" if kwargs[:shadow] == true
+    build.join(" ")
   end
 
   def src

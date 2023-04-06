@@ -43,3 +43,6 @@ group :test, optional: true do
 end
 
 gem "ruby-lsp", "~> 0.4.2"
+gem "byebug"
+
+gem "bridgetown-svg-inliner", "~> 2.0"

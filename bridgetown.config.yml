@@ -36,3 +36,5 @@ template_engine: erb
 collections:
   projects:
     output: true
+  prestations:
+    output: true

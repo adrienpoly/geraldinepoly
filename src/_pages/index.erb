@@ -28,20 +28,13 @@ layout: default
       Une décoration qui fait du bien
     </h2>
   </section>
-  <section class="pt-12 grid grid-cols-1 md:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
-    <h2>Réalisations</h2>
+  <h2>Réalisations</h2>
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
     <% collections.projects.resources.last(3).each do |project| %>
       <span class="flex flex-col">
         <h3><%= project.data.title %></h3>
         <a href="<%= project.relative_url %>">
           <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true) %>
-
-          <span class="mt-4 flex flex-col">
-            <span class="my-2">
-              <%#= project.description %>
-            </span>
-            <a class="text-right">Découvrir</a>
-          </span>
         </a>
       </span>
     <% end %>

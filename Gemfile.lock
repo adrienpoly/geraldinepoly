@@ -43,7 +43,11 @@ GEM
       zeitwerk (~> 2.5)
     bridgetown-paginate (1.2.0)
       bridgetown-core (= 1.2.0)
+    bridgetown-svg-inliner (2.0.0)
+      bridgetown (>= 1.2.0, < 2.0)
+      nokogiri
     builder (3.2.4)
+    byebug (11.1.3)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     erubi (1.12.0)
@@ -148,6 +152,8 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.2.0)
+  bridgetown-svg-inliner (~> 2.0)
+  byebug
   minitest
   minitest-profile
   minitest-reporters

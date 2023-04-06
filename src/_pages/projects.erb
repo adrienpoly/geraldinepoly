@@ -13,13 +13,6 @@ layout: default
       <h3><%= project.data.title %></h3>
       <a href="<%= project.relative_url %>">
         <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true) %>
-
-        <span class="mt-4 flex flex-col">
-          <span class="my-2">
-            <%#= project.description %>
-          </span>
-          <a class="text-right">Découvrir</a>
-        </span>
       </a>
     </span>
 

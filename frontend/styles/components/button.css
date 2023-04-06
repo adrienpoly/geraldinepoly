@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply text-primary bg-white border border-primary border-solid py-2 px-4 focus:outline-none hover:bg-gray-lightest rounded text-base no-underline hover:no-underline;
+    @apply text-primary bg-white font-normal border border-primary border-solid py-2 px-4 focus:outline-none hover:bg-gray-lightest rounded text-base no-underline hover:no-underline;
   }
 
   .btn-primary {

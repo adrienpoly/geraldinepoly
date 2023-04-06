@@ -4,3 +4,24 @@ title: prestations
 ---
 
 <h1 class="text-center">Préstations</h1>
+
+<section>
+  <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <% collections.prestations.resources.each do |prestation| %>
+      <span class="flex flex-col justify-between">
+        <div class="flex items-center w-full gap-4">
+          <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 fill-primary" if prestation.data.icon%>
+          <h2><%= prestation.data.title %></h2>
+        </div>
+
+        <span class="my-2 text-gray">
+          <%= prestation.data.description %>
+        </span>
+
+        <span class="text-primary text-xl font-semibold my-2">
+          <%= prestation.data.price %>
+        </span>
+      </span>
+    <% end %>
+  </div>
+</section>
