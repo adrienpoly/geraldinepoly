@@ -11,11 +11,12 @@
 #   );
 
 class CloudinaryImage < Bridgetown::Component
-  def initialize(image_id:, width:, height: nil, **kwargs)
+  def initialize(image_id:, width: nil, height: nil, **kwargs)
     @kwargs = kwargs
     @image_id = image_id
     @width = width
     @height = height
+    raise unless width || height
   end
 
   attr_reader :kwargs, :image_id, :width, :height
@@ -44,6 +45,8 @@ class CloudinaryImage < Bridgetown::Component
       ["c_fill", "h_#{height * x}", "w_#{width * x}"].join(",")
     elsif width
       ["c_scale", "w_#{width * x}"].join(",")
+    elsif height
+      ["c_scale", "h_#{height * x}"].join(",")
     end
   end
 end
