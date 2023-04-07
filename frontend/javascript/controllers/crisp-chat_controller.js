@@ -8,6 +8,10 @@ export default class extends Controller {
   }
 
   initializeCrisp() {
+    if (window.$crisp) {
+      return;
+    }
+
     window.$crisp = [];
     window.CRISP_WEBSITE_ID = "fa4a0e7f-2db1-464f-98ce-d0056f168353";
     const d = document;
