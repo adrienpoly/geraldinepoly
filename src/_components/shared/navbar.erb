@@ -16,7 +16,10 @@
 
 
 <nav class="relative flex h-full w-full items-center justify-between gap-4 p-4 sm:hidden">
-  <%= link_to "Géraldine POLY", "/", class: "text-xl text-primary font-semibold" %>
+    <a href="/" class="flex gap-4 items-center">
+      <%= svg "images/cat.svg", class: "h-10 fill-primary", alt: "maneki-neko le chat qui apporte prospérité et bonheur" %>
+      <div class="text-xl text-primary font-semibold">Géraldine POLY</div>
+    </a>
   <details class="inline-block text-left">
     <summary class="list-none" aria-haspopup="menu" role="button">
       <div class="burger">
