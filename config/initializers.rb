@@ -41,4 +41,8 @@ Bridgetown.configure do |config|
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
   init :"bridgetown-svg-inliner"
+
+  config.url = "https://www.geraldinepoly.com" # the base hostname & protocol for your site
+
+  init :"bridgetown-sitemap"
 end

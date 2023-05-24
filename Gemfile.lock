@@ -43,6 +43,8 @@ GEM
       zeitwerk (~> 2.5)
     bridgetown-paginate (1.2.0)
       bridgetown-core (= 1.2.0)
+    bridgetown-sitemap (2.0.1)
+      bridgetown (>= 1.2.0, < 2.0)
     bridgetown-svg-inliner (2.0.0)
       bridgetown (>= 1.2.0, < 2.0)
       nokogiri
@@ -152,6 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.2.0)
+  bridgetown-sitemap (~> 2.0)
   bridgetown-svg-inliner (~> 2.0)
   byebug
   minitest
