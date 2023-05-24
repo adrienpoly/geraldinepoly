@@ -11,14 +11,16 @@
     justify-content: center;
     align-items: center;
     position: relative;
-  }
-
-  parallax-section div {
-    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   parallax-section h2 {
     @apply m-0 font-semibold font-serif tracking-tight absolute text-lg p-2 bg-dark text-white shadow;
-    position: absolute;
+    @apply top-32 md:top-64;
+    max-width: 250px;
+    &.top {
+      @apply top-32 md:top-16;
+    }
   }
 }

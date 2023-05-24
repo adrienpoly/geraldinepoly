@@ -1,0 +1,13 @@
+<div class="flex items-center justify-center gap-8">
+  <a href="https://www.instagram.com/gg.coachdeco/">
+    <%= svg "images/icons/icn-instagram.svg", class: "h-10 text-primary" %>
+  </a>
+
+  <a href="https://www.linkedin.com/in/geraldine-poly-1a8b8a1b9/">
+    <%= svg "images/icons/icn-linkedin.svg", class: "h-10 text-primary" %>
+  </a>
+
+  <div data-controller="mail-to" data-mail-to-email-value="geraldinepoly@outlook.com" data-action="click->mail-to#openEmail" class="cursor-pointer">
+    <%= svg "images/icons/icn-envelope.svg", class: "h-10 text-primary" %>
+  </div>
+</div>
