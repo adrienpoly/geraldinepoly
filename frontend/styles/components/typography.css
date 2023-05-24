@@ -1,0 +1,17 @@
+@layer components {
+  body {
+    @apply text-slate-600 text-lg leading-relaxed;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-primary;
+  }
+
+  h2 {
+    @apply text-xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+}

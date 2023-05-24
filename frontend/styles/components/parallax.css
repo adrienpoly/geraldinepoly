@@ -1,0 +1,24 @@
+@layer components {
+  .scroll-snap-y {
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 10rem);
+  }
+
+  parallax-section {
+    height: calc(100vh - 10rem);
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  parallax-section div {
+    position: relative;
+  }
+
+  parallax-section h2 {
+    @apply m-0 font-semibold font-serif tracking-tight absolute text-lg p-2 bg-dark text-white shadow;
+    position: absolute;
+  }
+}

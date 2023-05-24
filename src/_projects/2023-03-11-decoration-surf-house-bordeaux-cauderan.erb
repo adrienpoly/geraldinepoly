@@ -6,16 +6,20 @@ image_id: tom/surf_house_salon_2
 ---
 
 <div class="flex flex-col gap-4">
-  <div class="text-gray">Reprehenderit et et velit aliquip Lorem ipsum ullamco excepteur ipsum nulla tempor labore. Exercitation id aute magna aliqua officia minim fugiat. Consequat ad reprehenderit do ex fugiat est occaecat. Nisi nisi incididunt labore ea magna culpa minim. Eiusmod amet dolor ipsum esse fugiat consequat. Culpa proident nostrud magna Lorem quis fugiat amet in esse incididunt nulla do eu.</div>
   <div class="flex md:grid-cols-2 gap-4">
     <%= render CloudinaryImage.new(image_id: "tom/avant_après_surf_house_Caudéran", width: 1200, height: 600) %>
   </div>
 
+  <div class="text-gray mt-4">Nichée dans un charmant quartier de Caudéran, cette maison familiale a fait l'objet d'une rénovation complète dans un esprit "surf" souhaité par le propriétaire tout en incarnant un espace de vie facile et accueillant.</div>
+  <div class="text-gray">La rénovation a été marquée par l'utilisation de matériaux naturels et l'incorporation d'éléments rappelant l'océan. Le bois, le cuir et le lin se mêlent harmonieusement pour créer une atmosphère chaleureuse et naturelle.</div>
+
   <h2 class="mt-8">Salon</h2>
   <%= render CloudinaryImage.new(image_id: "tom/surf_house_salon_2", width: 1200, shadow: true) %>
+  <div class="text-gray mt-4">Un soin particulier a été accordé à la verdure, avec une sélection de plantes qui apportent de la vie et de la fraîcheur à chaque pièce.</div>
   <%= render CloudinaryImage.new(image_id: "tom/surf_house_salon_bibliotheque_2", width: 1200, shadow: true) %>
 
   <h2 class="mt-8">Cuisine et salle à manger</h2>
+  <div class="text-gray">Le coin repas s'ouvre sur un papier peint panoramique représentant les dunes de la côte landaise, apportant une véritable sensation d'évasion. Le mobilier en bois clair, avec une grande table conviviale, est complété par une banquette sur mesure.</div>
   <div class="flex gap-4">
     <%= render CloudinaryImage.new(image_id: "tom/surf_house_cuisine", height: 800, width: 600, shadow: true) %>
     <%= render CloudinaryImage.new(image_id: "tom/surf_house_salle_a_manger_2", height: 800, width: 600, shadow: true) %>

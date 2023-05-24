@@ -25,4 +25,8 @@ export default class extends Controller {
       client.setAttribute("data-turbo-permanent", "true")
     }, 1000);
   }
+
+  show() {
+    $crisp.push(["do", "chat:open"]);
+  }
 }

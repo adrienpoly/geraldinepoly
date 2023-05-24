@@ -3,25 +3,44 @@ layout: default
 title: prestations
 ---
 
-<h1 class="text-center">Préstations</h1>
+<h1 class="text-center my-8">Préstations</h1>
 
-<section>
-  <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-    <% collections.prestations.resources.each do |prestation| %>
-      <span class="flex flex-col justify-between">
-        <div class="flex items-center w-full gap-4">
-          <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 fill-primary" if prestation.data.icon%>
-          <h2><%= prestation.data.title %></h2>
-        </div>
+<div class="flex flex-col gap-8 pb-16">
+  <section>
+    <div class="bg-teal-50 rounded-lg p-4 flex flex-col gap-4">
+      <h2>Votre première consultation gratuite de 30 minutes!</h2>
+      <p>
+        Vous avez un projet de décoration, d'aménagement ou de rénovation? Vous souhaitez en savoir plus sur le Feng Shui et ses bienfaits? Vous avez besoin d'un conseil déco pour votre intérieur?
+      </p>
 
-        <span class="my-2 text-gray">
-          <%= prestation.data.description %>
+      <button class="btn btn-primary self-start" data-action="click->crisp-chat#show">Je réserve un créneau</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+      <% collections.prestations.resources.each do |prestation| %>
+        <span class="flex flex-col justify-between">
+          <div class="flex items-center w-full gap-4">
+            <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 fill-primary" if prestation.data.icon%>
+            <h2><%= prestation.data.title %></h2>
+          </div>
+
+          <span class="my-2 text-gray">
+            <%= prestation.data.description %>
+          </span>
+
+          <span class="text-primary text-xl font-semibold my-2">
+            <%= prestation.data.price %>
+          </span>
+
+          <% if prestation.data.cta_link %>
+            <button class="btn btn-primary self-start" href="<%= prestation.data.cta_link %>">
+              <%= prestation.data.cta_text %>
+            </button>
+          <% end %>
         </span>
-
-        <span class="text-primary text-xl font-semibold my-2">
-          <%= prestation.data.price %>
-        </span>
-      </span>
-    <% end %>
-  </div>
-</section>
+      <% end %>
+    </div>
+  </section>
+</div>

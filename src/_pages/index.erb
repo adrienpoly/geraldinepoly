@@ -28,8 +28,8 @@ layout: default
       Une décoration qui fait du bien
     </h2>
   </section>
-  <h2>Réalisations</h2>
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
+  <h2 class="mb-4 my-12 text-primary text-center sm:text-3xl md:text-4xl lg:text-5xl tracking-widest">Réalisations</h2>
+  <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
     <% collections.projects.resources.last(3).each do |project| %>
       <span class="flex flex-col">
         <h3><%= project.data.title %></h3>

@@ -5,11 +5,13 @@ description: |
 layout: default
 ---
 
-<h1 class="text-center">Réalisations</h1>
+<h1 class="text-center my-8">Réalisations</h1>
+
+<p>Voici quelques exemples de projets qui illustrent mon travail.</p>
 
 <section class="pt-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex-row lg:items-start lg:justify-between" id="projects">
   <% collections.projects.resources.each do |project| %>
-    <span class="flex flex-col">
+    <span class="flex flex-col gap-4">
       <h3><%= project.data.title %></h3>
       <a href="<%= project.relative_url %>">
         <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true) %>

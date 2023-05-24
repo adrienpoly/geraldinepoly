@@ -8,11 +8,11 @@ layout: default
   previous_project = (projects.index(resource) - 1) >= 0 ? projects[projects.index(resource) - 1] : nil
 %>
 
-<h1 class="text-center text-primary"><%= data.title %></h1>
+<h1 class="text-center text-primary my-8"><%= data.title %></h1>
 
 <%= yield %>
 
-<div class="flex">
+<div class="hidden">
   <% if previous_project %>
     <%= link_to "Projet précédent", previous_project.relative_url, class: "btn btn-primary mr-auto" %>
   <% end %>

@@ -26,7 +26,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.teal[600],
+        primary: "#3DB874",
         "primary-dark": colors.teal[700],
         secondary: colors.teal[400],
         dark: colors.slate[500],
@@ -50,7 +50,7 @@ module.exports = {
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
-    safelist: ["h1"],
+    safelist: ["h1","h2", "h3"],
     typography: (theme) => ({
       DEFAULT: {
         css: {

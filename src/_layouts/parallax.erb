@@ -3,12 +3,11 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="antialiased <%= data.layout %> <%= data.page_class %>" data-controller="crisp-chat">
+  <body class="antialiased overflow-hidden <%= data.layout %> <%= data.page_class %>" data-controller="crisp-chat">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
-    <main class="container min-h-[calc(100vh-10rem)] sm:min-h-[calc(100vh-16rem)]">
+    <main class="min-h-[calc(100vh-10rem)] sm:min-h-[calc(100vh-16rem)] ">
       <%= yield %>
     </main>
-    <%= render "footer", metadata: site.metadata %>
   </body>
 </html>
