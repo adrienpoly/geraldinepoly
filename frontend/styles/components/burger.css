@@ -21,9 +21,15 @@
         @apply translate-y-[-0.6rem];
       }
     }
-    detail-menu {
+    details-menu {
+      @apply absolute left-0 mt-4 w-screen bg-white py-8 border-b-2 border-solid border-gray-lightest shadow-lg transition duration-500 focus:outline-none opacity-0 h-0 z-50;
+
+      ul {
+        @apply flex h-full flex-col items-center justify-center gap-8 sm:justify-between;
+      }
+
       a {
-        @apply text-lg text-gray;
+        @apply text-xl text-gray;
       }
     }
   }
@@ -37,6 +43,9 @@
     }
     .line-3 {
       @apply translate-x-[-0.25rem] translate-y-0 rotate-[-135deg];
+    }
+    details-menu {
+      @apply opacity-100 h-auto;
     }
   }
 }

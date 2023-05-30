@@ -31,16 +31,15 @@
 
     <details-menu
       role="menu"
-      class="absolute left-0 mt-4 w-screen bg-white py-8 shadow transition duration-1000 focus:outline-none"
     >
-      <div class="flex h-full flex-col items-center justify-center gap-8 sm:justify-between" role="none">
+      <ul role="none">
         <%= link_to "Prestations", "/prestations" %>
         <%= link_to "Réalisations", "/projects" %>
         <%= link_to "À propos", "/a-propos" %>
         <%= link_to "Contact", "/contact" %>
         <div class="border border-1 border-gray-lightest w-3/5"></div>
         <%= render "links" %>
-      </div>
+      </ul>
     </details-menu>
   </details>
 </nav>
