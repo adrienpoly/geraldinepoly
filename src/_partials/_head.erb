@@ -2,8 +2,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <% resource_title = strip_html(strip_newlines(title)) %>
 <title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %>: <%= metadata.tagline %><% end %></title>
-
 <meta name="description" content="<%= metadata.description %>" />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="<%= "#{metadata.title} : #{metadata.tagline}" %>">
+<meta itemprop="description" content="<%= metadata.description %>">
+<meta itemprop="image" content="<%= metadata.image_url %>">
+
+<!-- Twitter Card data -->
+<meta name="twitter:title" content="<%= "#{metadata.title} : #{metadata.tagline}" %>">
+<meta name="twitter:description" content="<%= metadata.description %>">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="<%= metadata.image_url %>">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="<%= "#{metadata.title} : #{metadata.tagline}" %>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.geraldinepoly.com/" />
+<meta property="og:image" content="<%= metadata.image_url %>" />
+<meta property="og:description" content="<%= metadata.description %>" />
+<meta property="og:site_name" content="<%= metadata.title %>" />
+<meta property="og:locale" content="<%= metadata.locale %>" />
+
 <meta name="turbo-cache-control" content="no-preview" />
 <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
