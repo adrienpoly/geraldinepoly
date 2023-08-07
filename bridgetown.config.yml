@@ -38,3 +38,7 @@ collections:
     output: true
   prestations:
     output: true
+  articles:
+    output: true
+    sort_by: date
+    sort_direction: descending

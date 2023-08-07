@@ -4,12 +4,14 @@
     <a href="<%= relative_url '/prestations' %>">Prestations</a>
     <%= link_to "Réalisations", "/projects" %>
 
+
   </div>
   <a href="<%= relative_url '/' %>">
     <%= render Logo.new class: "h-32 fill-primary" %>
   </a>
   <div class="flex items-center justify-start gap-8 lg:gap-12">
     <a href="<%= relative_url '/a-propos' %>">À propos</a>
+    <%= link_to "Articles", "/articles" %>
     <a href="<%= relative_url '/contact' %>">Contact</a>
   </div>
 </nav>
@@ -35,6 +37,7 @@
       <ul role="none">
         <%= link_to "Prestations", "/prestations" %>
         <%= link_to "Réalisations", "/projects" %>
+        <%= link_to "Articles", "/posts" %>
         <%= link_to "À propos", "/a-propos" %>
         <%= link_to "Contact", "/contact" %>
         <div class="border border-1 border-gray-lightest w-3/5"></div>

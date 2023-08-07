@@ -2,6 +2,9 @@
 layout: default
 ---
 
-<h1><%= data.title %></h1>
+<h1 class="my-16 text-center"><%= data.title %></h1>
 
-<%= yield %>
+<div class="prose">
+  <%= render CloudinaryImage.new(width: 400, height: 400, image_id: data.image_id, loading: "lazy", class: "mb-8 md:float-right md:ml-8 md:w-64 lg:w-fit px-8 md:px-0 mx-auto") %>
+  <%= yield %>
+</div>

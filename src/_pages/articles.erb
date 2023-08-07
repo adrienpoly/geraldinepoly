@@ -1,0 +1,28 @@
+---
+Geraldine POLY: coach décoration, consultante Feng Shui
+description: |
+  Geraldine POLY : Coach décoration et consultante Feng Shui à Bordeaux. Je propose des services de coach décoration pour des espaces ou on se sent bien. J'accompagne les particuliers et les professionnels dans leurs projets de décoration et d'aménagement intérieur.
+layout: default
+---
+
+<h1 class="text-center my-8">Articles</h1>
+
+<section class="pt-12 flex flex-col gap-8 md:gap-12" id="articles">
+  <% collections.articles.resources.each do |post| %>
+    <a href="<%= post.relative_url %>">
+      <div class="flex md:gap-4 items-start">
+        <div class="shrink-0">
+          <%= render CloudinaryImage.new(width: 200, height: 200, image_id: post.data.image_id, loading: "lazy", class: "hidden md:flex mt-2 shrink-0") %>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3><%= post.data.title %></h3>
+
+          <div>
+            <%= render CloudinaryImage.new(width: 100, height: 100, image_id: post.data.image_id, loading: "lazy", class: "float-left mr-2 mb-2 mt-2 md:hidden") %>
+            <div><%= post.data.description %></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</section>
