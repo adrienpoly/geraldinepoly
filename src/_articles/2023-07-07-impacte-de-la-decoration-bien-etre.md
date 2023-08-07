@@ -5,7 +5,6 @@ description: Explorez comment la décoration intérieure impacte votre bien-êtr
 image_id: image9
 ---
 
-maneki-neko-cats
 Le rôle de la décoration intérieure dépasse largement le simple aspect esthétique. Elle façonne notre expérience quotidienne et influence notre bien-être, tant sur le plan physique qu'émotionnel. Dans cet article, nous explorerons comment un intérieur soigneusement pensé peut améliorer votre humeur et votre santé mentale.
 
 ## Qu'est-ce qui rend un espace "bien pensé" ?
