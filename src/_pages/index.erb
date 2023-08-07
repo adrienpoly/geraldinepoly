@@ -18,10 +18,10 @@ layout: default
       <span class="inline-block">Consultante Feng Shui</span>
     </h2>
     <div class="hidden md:block">
-      <%= render CloudinaryImage.new(width: 866, height: 375, image_id: "tom/banner1", loading: "lazy", class: "hidden md:block") %>
+      <%= render CloudinaryImage.new(width: 866, height: 375, image_id: "tom/banner1", loading: "lazy", class: "hidden md:block", alt: "Géraldine POLY : une décoration qui fait du bien") %>
     </div>
     <div class="md:hidden">
-      <%= render CloudinaryImage.new(width: 866, height: 600, image_id: "tom/banner1", loading: "lazy", class: "md:hidden") %>
+      <%= render CloudinaryImage.new(width: 866, height: 600, image_id: "tom/banner1", loading: "lazy", class: "md:hidden", alt: "Géraldine POLY : une décoration qui fait du bien") %>
     </div>
 
     <h2 class="text-xl tracking-wider text-accent text-center text-gray hidden md:block">
@@ -44,7 +44,7 @@ layout: default
       <span class="flex flex-col">
         <h3><%= project.data.title %></h3>
         <a href="<%= project.relative_url %>">
-          <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true) %>
+          <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true, alt: "Image du projet : #{project.data.title}") %>
         </a>
       </span>
     <% end %>
