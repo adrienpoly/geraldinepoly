@@ -4,6 +4,6 @@
   }
 
   .btn-primary {
-    @apply text-white bg-primary border-0 focus:outline-none hover:bg-primary-dark;
+    @apply text-white bg-primary border-0 focus:outline-none hover:bg-primary-dark font-semibold;
   }
 }
