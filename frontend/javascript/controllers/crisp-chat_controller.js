@@ -28,5 +28,6 @@ export default class extends Controller {
 
   show() {
     $crisp.push(["do", "chat:open"]);
+    $crisp.push(["safe", true])
   }
 }
