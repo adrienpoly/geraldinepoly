@@ -1,13 +1,16 @@
 <div class="flex items-center justify-center gap-8">
-  <a href="https://www.instagram.com/gg.coachdeco/">
+  <a href="https://www.instagram.com/gg.coachdeco/" class="flex flex-col items-center">
     <%= svg "images/icons/icn-instagram.svg", class: "h-10 text-primary" %>
+    <div class="sr-only">Instagram</div>
   </a>
 
-  <a href="https://www.linkedin.com/in/geraldine-poly/">
+  <a href="https://www.linkedin.com/in/geraldine-poly/" class="flex flex-col items-center">
     <%= svg "images/icons/icn-linkedin.svg", class: "h-10 text-primary" %>
+    <div class="sr-only">Linkedin</div>
   </a>
 
-  <div data-controller="mail-to" data-mail-to-email-value="geraldinepoly@outlook.com" data-action="click->mail-to#openEmail" class="cursor-pointer">
+  <div data-controller="mail-to" data-mail-to-email-value="geraldinepoly@outlook.com" data-action="click->mail-to#openEmail" class="flex flex-col items-center cursor-pointer">
     <%= svg "images/icons/icn-envelope.svg", class: "h-10 text-primary" %>
+    <div class="sr-only">adresse email</div>
   </div>
 </div>
