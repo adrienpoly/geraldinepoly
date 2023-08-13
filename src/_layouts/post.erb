@@ -9,6 +9,13 @@ layout: default
 <h1 class="mb-16 mt-8 text-center"><%= data.title %></h1>
 
 <div class="prose">
-  <%= render CloudinaryImage.new(width: 400, height: 400, image_id: data.image_id, loading: "lazy", class: "mb-8 md:float-right md:ml-8 md:w-64 lg:w-fit px-8 md:px-0 mx-auto") %>
+  <%= render CloudinaryImage.new(
+                  width: 400,
+                  height: 400,
+                  image_id: data.image_id,
+                  loading: "lazy",
+                  class: "mb-8 md:float-right md:ml-8 md:w-64 lg:w-fit px-8 md:px-0 mx-auto",
+                  alt: "illustration de l'article :#{data.title}")
+  %>
   <%= yield %>
 </div>
