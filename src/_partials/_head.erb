@@ -33,13 +33,15 @@
 <script src="<%= webpack_path :js %>" defer></script>
 <%= live_reload_dev_js %>
 
-<link rel="dns-prefetch" href="https://www.google-analytics.com" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2LNLLE7EJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<% if Bridgetown.env.production? %>
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2LNLLE7EJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-J2LNLLE7EJ');
-</script>
+    gtag('config', 'G-J2LNLLE7EJ');
+  </script>
+<% end %>
