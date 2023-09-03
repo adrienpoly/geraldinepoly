@@ -1,6 +1,13 @@
-<footer class="container pt-24 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-dark pb-8">
+<footer class="flex flex-col items-center pt-24 gap-4 px-4">
+  <a href="https://geraldinepoly.substack.com" target="_blank" class="text-center">Des conseils déco et bien être : <strong class="underline text-primary">découvrez ma newsletter</strong></a>
 
-  <a href="<%= relative_url '/legals' %>" class="basis-auto md:basis-1/4">Mentions légales</a>
-  <%= render "links", size: 4, color: :gray %>
-  <span class="basis-auto md:basis-1/4 text-right">copyright – tous droits réservés</span>
+  <div class="container  flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-dark pb-8">
+
+
+    <a href="<%= relative_url '/legals' %>" class="hidden sm:block basis-auto md:basis-1/4">Mentions légales</a>
+    <%= render "links", size: 4, color: :gray %>
+    <a href="<%= relative_url '/legals' %>" class="sm:hidden">Mentions légales</a>
+
+    <span class="basis-auto md:basis-1/4 text-right">copyright – tous droits réservés</span>
+  </div>
 </footer>
