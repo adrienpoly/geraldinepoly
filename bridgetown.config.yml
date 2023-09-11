@@ -36,6 +36,8 @@ template_engine: erb
 collections:
   projects:
     output: true
+    sort_by: date
+    sort_direction: descending
   prestations:
     output: true
   articles:
