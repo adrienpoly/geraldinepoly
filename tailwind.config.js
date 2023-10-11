@@ -26,8 +26,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#3DB874",
-        "primary-dark": colors.teal[700],
+        primary: "#161F90",
+        "primary-dark": colors.blue[800],
         secondary: colors.teal[400],
         dark: colors.slate[500],
         gray: colors.zinc[500],
