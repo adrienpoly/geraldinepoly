@@ -15,32 +15,39 @@ description: |-
         Vous avez un projet de décoration, d'aménagement ou de rénovation? Vous souhaitez en savoir plus sur le Feng Shui et ses bienfaits? Vous avez besoin d'un conseil déco pour votre intérieur?
       </p>
 
-      <button class="btn btn-primary self-start" data-action="click->crisp-chat#show">Je réserve un créneau</button>
+      <button class="btn btn-primary self-end" data-action="click->crisp-chat#show">Je réserve un créneau</button>
     </div>
   </section>
 
   <section>
-    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-12 md:gap-8 lg:gap-16 items-start">
       <% collections.prestations.resources.each do |prestation| %>
-        <span class="flex flex-col justify-between">
-          <div class="flex items-center w-full gap-4">
-            <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 text-primary" if prestation.data.icon%>
-            <h2><%= prestation.data.title %></h2>
+        <span class="flex flex-col justify-between h-full">
+          <div class="flex flex-col items-center w-full gap-4">
+            <div class="flex items-center w-full gap-4">
+              <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 text-primary" if prestation.data.icon %>
+              <h2><%= prestation.data.title %></h2>
+            </div>
+            <span class="my-2 text-gray">
+              <%= prestation.data.description %>
+            </span>
           </div>
 
-          <span class="my-2 text-gray">
-            <%= prestation.data.description %>
-          </span>
+          <div class="flex items-center justify-between">
+            <span class="text-primary text-xl font-semibold my-2">
+              <%= prestation.data.price %>
+            </span>
 
-          <span class="text-primary text-xl font-semibold my-2">
-            <%= prestation.data.price %>
-          </span>
+            <% if prestation.data.cta_link %>
+              <button class="btn btn-primary self-end" href="<%= prestation.data.cta_link %>">
+                <%= prestation.data.cta_text %>
+              </button>
+            <% end %>
 
-          <% if prestation.data.cta_link %>
-            <button class="btn btn-primary self-start" href="<%= prestation.data.cta_link %>">
-              <%= prestation.data.cta_text %>
-            </button>
-          <% end %>
+            <% if prestation.data.know_more %>
+              <button class="btn btn-primary self-end" data-action="click->crisp-chat#show">En savoir plus</button>
+            <% end %>
+          </div>
         </span>
       <% end %>
     </div>
