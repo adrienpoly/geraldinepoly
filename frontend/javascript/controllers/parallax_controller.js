@@ -1,12 +1,11 @@
-import { Controller } from "@hotwired/stimulus";
-import { animate, scroll } from "motion";
+import { Controller } from '@hotwired/stimulus'
+import { animate, scroll } from 'motion'
 
 export default class extends Controller {
-  static targets = ["header"]
+  static targets = ['header']
 
-  connect() {
+  connect () {
     this.headerTargets.forEach((header) => {
-      console.log(header);
       scroll(animate(header, { y: [-400, 400] }), {
         container: this.element,
         target: header
