@@ -18,10 +18,20 @@ export default class extends Controller {
   }
 
   resetInterval () {
-    clearInterval(this.interval)
+    this.stopInterval()
+    this.startInterval()
+  }
+
+  startInterval () {
+    console.log('start interval')
     this.interval = setInterval(() => {
       this.nextTarget.click()
     }, 5000)
+  }
+
+  stopInterval () {
+    console.log('stop interval')
+    clearInterval(this.interval)
   }
 
   // private
@@ -31,6 +41,8 @@ export default class extends Controller {
       slidesToShow: 1,
       draggable: true,
       rewind: true,
+      scrollLock: true,
+      scrollLockDelay: 100,
       dots: this.dotsTarget,
       arrows: {
         prev: this.previousTarget,
@@ -44,5 +56,9 @@ export default class extends Controller {
       this.nextTarget.click()
     }, 5000)
     this.element.addEventListener('click', this.resetInterval.bind(this))
+    this.element.addEventListener('touchstart', this.resetInterval.bind(this))
+    this.element.addEventListener('touchend', this.resetInterval.bind(this))
+    this.element.addEventListener('dragstart', this.stopInterval.bind(this))
+    this.element.addEventListener('dragend', this.startInterval.bind(this))
   }
 }
