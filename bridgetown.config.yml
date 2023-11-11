@@ -44,3 +44,7 @@ collections:
     output: true
     sort_by: date
     sort_direction: descending
+  testimonials:
+    output: true
+    sort_by: date
+    sort_direction: ascending
