@@ -1,5 +1,9 @@
 import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
+  initialize () {
+    this.messageSent = false
+  }
+
   connect () {
     setTimeout(() => {
       this.initializeCrisp()
@@ -35,10 +39,12 @@ export default class extends Controller {
   // private
 
   sendEvent () {
-    console.log('message sent')
-    window.gtag('event', 'message_sent', {
-      event_category: 'engagement',
-      event_label: 'chat'
-    })
+    if (!this.messageSent) {
+      this.messageSent = true
+      window.gtag('event', 'message_sent', {
+        event_category: 'engagement',
+        event_label: 'chat'
+      })
+    }
   }
 }
