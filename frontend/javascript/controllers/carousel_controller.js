@@ -23,14 +23,12 @@ export default class extends Controller {
   }
 
   startInterval () {
-    console.log('start interval')
     this.interval = setInterval(() => {
       this.nextTarget.click()
     }, 5000)
   }
 
   stopInterval () {
-    console.log('stop interval')
     clearInterval(this.interval)
   }
 
