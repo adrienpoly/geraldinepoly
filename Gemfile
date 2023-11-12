@@ -42,7 +42,7 @@ group :test, optional: true do
   gem "rails-dom-testing"
 end
 
-gem "ruby-lsp", "~> 0.4.2"
+gem "ruby-lsp"
 gem "byebug"
 
 gem "bridgetown-svg-inliner", "~> 2.0"
