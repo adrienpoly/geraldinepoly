@@ -8,41 +8,52 @@ layout: default
 
 <div class="pb-16">
   <section class="flex flex-col items-center gap-2 md:gap-4">
-    <h1 class="hidden sm:text-3xl md:text-4xl lg:text-5xl tracking-widest sm:block mt-8">GERALDINE POLY</h1>
+    <h1 class="text-5xl tracking-widest my-8">Une décoration qui fait du bien</h1>
 
     <%#= render Logo.new class: "w-40 sm:hidden fill-primary" %>
 
-    <h2 class="tracking-widest text-gray text-xl text-center not-prose">
-      <span class="inline-block">Coach décoration</span>
-      <span class="hidden sm:inline-block"> ~ </span>
-      <span class="inline-block">Consultante Feng Shui</span>
-    </h2>
+    <% if false %>
+      <h2 class="tracking-widest text-gray text-2xl text-center not-prose">
+        <span class="inline-block">Coach décoration</span>
+        <span class="hidden sm:inline-block"> ~ </span>
+        <span class="inline-block">Consultante Feng Shui</span>
+      </h2>
+      <h2 class="text-2xl tracking-wider text-primary text-center">
+        Une décoration qui fait du bien
+      </h2>
+    <% end %>
+
     <div class="hidden md:block w-full">
       <%= render CloudinaryImage.new(width: 866, height: 375, image_id: "tom/banner1", loading: "eager", class: "hidden md:block w-full", alt: "Géraldine POLY : une décoration qui fait du bien") %>
     </div>
     <div class="md:hidden">
       <%= render CloudinaryImage.new(width: 866, height: 600, image_id: "tom/banner1", loading: "eager", class: "md:hidden", alt: "Géraldine POLY : une décoration qui fait du bien") %>
     </div>
-
-    <h2 class="text-xl tracking-wider text-accent text-center text-gray hidden md:block">
-      Une décoration qui fait du bien
-    </h2>
   </section>
 
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Je suis Géraldine, coach en décoration d'intérieur et consultante Feng Shui</h2>
   <section class="mt-8">
-    <div class="bg-blue-50 rounded p-8 flex flex-col gap-4">
-      <h2>La newsletter déco qui fait du bien</h2>
-      Tous les mois, je vous partage mes conseils déco et Feng Shui pour vous sentir bien chez vous.
+    <div class="grid md:grid-cols-2 gap-4">
+      <%= render CloudinaryImage.new(
+                      image_id: "geraldine-poly",
+                      alt: "Geraldine POLY coach décoration et consultante Feng Shui à Bordeaux et environ",
+                      class: "shadow-2xl rounded",
+                      height: 400)
+      %>
+      <div class="flex flex-col justify-around items-center gap-4">
 
-      <a href="https://geraldinepoly.substack.com/subscribe" class="btn btn-primary self-start">Inscription</a>
+        <div class="text-gray text-center mt-4">Je vous accompagne dans vos <strong>projets de décoration</strong> et d'aménagement intérieur. Je vous aide à créer <strong>un espace qui vous ressemble</strong>, où vous vous <strong>sentez bien</strong>.</div>
+
+        <a href="<%= relative_url '/a-propos' %>" class="btn btn-primary w-fit">En savoir plus</a>
+      </div>
     </div>
   </section>
 
-  <h2 class="mb-12 mt-20 text-primary text-center sm:text-3xl md:text-4xl lg:text-5xl tracking-widest">Réalisations</h2>
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Réalisations</h2>
   <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
     <% collections.projects.resources.last(3).each do |project| %>
       <span class="flex flex-col">
-        <h3><%= project.data.title %></h3>
+        <h3 class="mb-2"><%= project.data.title %></h3>
         <a href="<%= project.relative_url %>">
           <%= render CloudinaryImage.new(width: 500, height: 300, image_id: project.data.image_id, loading: "lazy", shadow: true, alt: "Image du projet : #{project.data.title}") %>
         </a>
@@ -50,13 +61,32 @@ layout: default
     <% end %>
   </section>
 
-  <h2 class="mb-12 mt-20 text-primary text-center sm:text-3xl md:text-4xl lg:text-5xl tracking-widest">Témoignages</h2>
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Préstations</h2>
+  <section>
+    <div class="grid md:grid-cols-2 gap-4">
+      <a href="<%= relative_url '/prestations' %>">
+        <%= render CloudinaryImage.new(
+                    image_id: "Planche_tendance_coaching_décoration",
+                    height: 400,
+                    class: "shadow-2xl rounded",
+                    alt: "Une planche d'ambiance pour un coaching décoration à Bordeaux")
+        %>
+      </a>
+      <div class="flex flex-col justify-around items-center gap-4">
+        <div>Je propose un accompagnement en <strong>décoration d'intérieur</strong>. Ma spécialité : créer <strong>des espaces harmonieux</strong> où l'on se sent bien. Je maitrise le textile, les harmonies et les matières et en complément je me suis <strong>formée au Feng Shui</strong> et au <strong>pouvoir émotionnel des couleurs</strong> dans les intérieurs.</div>
+        <div>J’interviens aussi bien sur des <strong>conseils express</strong> (choix de couleur, papier peints, matériaux, agencement, luminaire) que sur des projets plus globaux de <strong>réaménagement d’une pièce</strong> ou rénovation d’un habitat.</div>
+        <a href="<%= relative_url '/prestations' %>" class="btn btn-primary">Je découvre</a>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Témoignages</h2>
   <section>
     <div class="glider-contain" data-controller="carousel">
       <div data-carousel-target="slides" class="glider">
         <% collections.testimonials.resources.each do |testimonials| %>
           <div class="w-full md:px-32">
-          <blockquote class="italic font-semibold">
+          <blockquote class="italic">
             <svg class="w-8 h-8 text-gray-400 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
             </svg>
@@ -67,9 +97,27 @@ layout: default
         <% end %>
       </div>
 
-      <button aria-label="Previous" data-carousel-target="previous" class="glider-prev hidden md:block">«</button>
-      <button aria-label="Next" data-carousel-target="next" class="glider-next hidden md:block">»</button>
+      <button aria-label="Previous" data-carousel-target="previous" class="glider-prev !left-0 hidden md:block">«</button>
+      <button aria-label="Next" data-carousel-target="next" class="glider-next !right-0 hidden md:block">»</button>
       <div data-carousel-target="dots" role="tablist" class="glider-dots"></div>
+    </div>
+  </section>
+
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">La newsletter déco qui fait du bien</h2>
+  <section>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex flex-col justify-around items-center gap-4">
+        <div>Tous les mois, je vous partage mes conseils déco et Feng Shui pour vous sentir bien chez vous.</div>
+        <a href="https://geraldinepoly.substack.com/subscribe" class="btn btn-primary" target="_blank">Je découvre la newsletter</a>
+      </div>
+      <a href="https://geraldinepoly.substack.com/subscribe" target="_blank">
+        <%= render CloudinaryImage.new(
+                        image_id: "newsletter-decoration",
+                        height: 400,
+                        class: "shadow-2xl rounded",
+                        alt: "la newsletter de Geraldine POLY coach décaoration et consultante Feng Shui à Bordeaux et environ")
+        %>
+      </a>
     </div>
   </section>
 </div>

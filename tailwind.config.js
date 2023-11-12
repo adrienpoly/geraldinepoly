@@ -76,7 +76,7 @@ module.exports = {
     fontSize: {
       xs: ['rfs(0.8125rem)', { lineHeight: 'rfs(1.5rem)' }],
       sm: ['rfs(0.875rem)', { lineHeight: 'rfs(1.5rem)' }],
-      base: ['rfs(1.125rem)', { lineHeight: 'rfs(1.75rem)' }],
+      base: ['rfs(1rem)', { lineHeight: 'rfs(1.75rem)' }],
       lg: ['rfs(1.125rem)', { lineHeight: 'rfs(1.75rem)' }],
       xl: ['rfs(1.25rem)', { lineHeight: 'rfs(2rem)' }],
       '2xl': ['rfs(1.5rem)', { lineHeight: 'rfs(2rem)' }],
