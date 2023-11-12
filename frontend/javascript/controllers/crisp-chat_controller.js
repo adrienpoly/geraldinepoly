@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
   connect () {
@@ -23,25 +22,23 @@ export default class extends Controller {
       const client = document.querySelector('.crisp-client')
       client.id = 'crisp-client'
       client.setAttribute('data-turbo-permanent', 'true')
+      window.$crisp.push(['on', 'message:sent', this.sendEvent.bind(this)])
     }, 1000)
-
-    $crisp.push(['on', 'message:sent', this.sendEvent.bind(this)])
   }
 
   show (e) {
     e.preventDefault()
-    $crisp.push(['do', 'chat:open'])
-    $crisp.push(['safe', true])
+    window.$crisp.push(['do', 'chat:open'])
+    window.$crisp.push(['safe', true])
   }
 
   // private
 
-  sendEvent (message) {
+  sendEvent () {
+    console.log('message sent')
     window.gtag('event', 'message_sent', {
       event_category: 'engagement',
-      event_label: 'chat',
-      value: message.content
+      event_label: 'chat'
     })
   }
 }
-/* eslint-enable no-undef */
