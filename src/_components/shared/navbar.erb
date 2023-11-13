@@ -1,6 +1,6 @@
 
-<nav class="hidden w-full grid-cols-[1fr_max-content_1fr] gap-8 py-4 sm:grid lg:gap-12 text-xl text-gray">
-  <div class="flex items-center justify-end gap-8 lg:gap-12">
+<nav class="hidden w-full grid-cols-[1fr_max-content_1fr] gap-4 md:gap-8 py-4 sm:grid lg:gap-12 text-xl text-gray">
+  <div class="flex items-center justify-end gap-4 md:gap-8 lg:gap-12">
     <a href="<%= relative_url '/prestations' %>">Prestations</a>
     <%= link_to "Réalisations", "/projects" %>
 
@@ -9,7 +9,7 @@
   <a href="<%= relative_url '/' %>">
     <%= render Logo.new class: "h-32 fill-primary" %>
   </a>
-  <div class="flex items-center justify-start gap-8 lg:gap-12">
+  <div class="flex items-center justify-start gap-4 md:gap-8 lg:gap-12">
     <a href="<%= relative_url '/a-propos' %>">À propos</a>
     <%= link_to "Articles", "/articles" %>
     <a href="<%= relative_url '/contact' %>">Contact</a>
