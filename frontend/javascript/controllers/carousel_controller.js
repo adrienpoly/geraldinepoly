@@ -8,13 +8,25 @@ export default class extends Controller {
   static targets = ['slides', 'slide', 'previous', 'next', 'dots']
 
   connect () {
-    this.#initializeGlider()
-    this.#initializeAutoplay()
+    if (document.documentElement.hasAttribute('data-turbo-preview')) {
+      return
+    }
+
+    requestAnimationFrame(() => {
+      this.#initializeGlider()
+      this.#initializeAutoplay()
+    })
   }
 
   disconnect () {
+    if (document.documentElement.hasAttribute('data-turbo-preview')) {
+      return
+    }
+
     clearInterval(this.interval)
     this.element.removeEventListener('click', this.resetInterval)
+    this.glider.destroy()
+    this.element.remove()
   }
 
   resetInterval () {
