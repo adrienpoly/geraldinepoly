@@ -25,8 +25,8 @@ export default class extends Controller {
 
     clearInterval(this.interval)
     this.element.removeEventListener('click', this.resetInterval)
+    this.glider.scrollItem(0)
     this.glider.destroy()
-    this.element.remove()
   }
 
   resetInterval () {
