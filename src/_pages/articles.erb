@@ -7,10 +7,10 @@ layout: default
 
 <h1 class="text-center my-8">Articles</h1>
 
-<section class="pt-12 flex flex-col gap-8 md:gap-12" id="articles">
+<section class="py-12 flex flex-col gap-8 md:gap-12" id="articles">
   <% collections.articles.resources.each do |post| %>
     <a href="<%= post.relative_url %>">
-      <div class="flex md:gap-4 items-start">
+      <div class="flex md:gap-4 lg:gap-8 items-center">
         <div class="shrink-0">
           <%= render CloudinaryImage.new(width: 200, height: 200, image_id: post.data.image_id, loading: "lazy", class: "hidden md:flex mt-2 shrink-0", alt: "illustration de l'article :#{post.data.title}") %>
         </div>
