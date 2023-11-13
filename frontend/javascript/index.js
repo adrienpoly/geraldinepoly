@@ -20,14 +20,3 @@ Object.entries(controllers).forEach(([filename, controller]) => {
     Stimulus.register(identifier, controller.default)
   }
 })
-
-addEventListener('turbo:before-render', (event) => {
-  if (document.startViewTransition) {
-    const originalRender = event.detail.render
-    event.detail.render = (currentElement, newElement) => {
-      document.startViewTransition(() =>
-        originalRender(currentElement, newElement)
-      )
-    }
-  }
-})
