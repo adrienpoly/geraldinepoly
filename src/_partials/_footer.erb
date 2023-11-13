@@ -1,10 +1,8 @@
 <div class="bg-blue-50">
-  <div class="container pb-20 pt-8">
+  <div class="container  flex justify-center items-center flex-col gap-4 pb-20 pt-8">
     <%= render "zones" %>
-  </div>
-  <div class="flex justify-center items-center flex-col gap-4">
-    <a href="https://geraldinepoly.substack.com" target="_blank" class="text-center w-full">Recevez des conseils déco et bien être tous les mois : <strong class="underline text-primary">découvrez ma newsletter</strong></a>
-    <div class="container flex flex-col sm:flex-row items-center justify-between gap-2 text-dark pb-8">
+    <a href="https://geraldinepoly.substack.com" target="_blank" class="text-center w-full">Recevez des conseils déco et bien être tous les mois avec <strong class="underline text-primary">ma newsletter</strong></a>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-dark pb-8">
       <a href="<%= relative_url '/legals' %>" class="hidden sm:block basis-auto md:basis-1/4">Mentions légales</a>
       <%= render "links", size: 4, color: :gray %>
       <a href="<%= relative_url '/legals' %>" class="sm:hidden">Mentions légales</a>
