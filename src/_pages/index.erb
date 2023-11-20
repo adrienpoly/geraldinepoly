@@ -49,7 +49,7 @@ layout: default
     </div>
   </section>
 
-  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Réalisations</h2>
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest" id="realisation">Réalisations</h2>
   <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8" id="projects">
     <% collections.projects.resources.last(3).each do |project| %>
       <span class="flex flex-col">
@@ -61,7 +61,7 @@ layout: default
     <% end %>
   </section>
 
-  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Préstations</h2>
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest" id="presatations">Préstations</h2>
   <section>
     <div class="grid md:grid-cols-2 gap-4">
       <a href="<%= relative_url '/prestations' %>">
@@ -80,7 +80,7 @@ layout: default
     </div>
   </section>
 
-  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest">Témoignages</h2>
+  <h2 class="mb-8 mt-20 text-primary text-center tracking-widest" id="temoignages">Témoignages</h2>
   <section>
     <div class="glider-contain" data-controller="carousel">
       <div data-carousel-target="slides" class="glider">
