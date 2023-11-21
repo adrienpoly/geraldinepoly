@@ -43,6 +43,8 @@ GEM
       zeitwerk (~> 2.5)
     bridgetown-paginate (1.2.0)
       bridgetown-core (= 1.2.0)
+    bridgetown-seo-tag (6.0.0)
+      bridgetown (>= 1.2.0.beta5, < 2.0)
     bridgetown-sitemap (2.0.1)
       bridgetown (>= 1.2.0, < 2.0)
     bridgetown-svg-inliner (2.0.0)
@@ -154,6 +156,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.2.0)
+  bridgetown-seo-tag
   bridgetown-sitemap (~> 2.0)
   bridgetown-svg-inliner (~> 2.0)
   byebug

@@ -48,3 +48,5 @@ gem "byebug"
 gem "bridgetown-svg-inliner", "~> 2.0"
 
 gem "bridgetown-sitemap", "~> 2.0"
+
+gem 'bridgetown-seo-tag'

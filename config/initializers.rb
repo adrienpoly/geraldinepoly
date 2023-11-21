@@ -45,4 +45,6 @@ Bridgetown.configure do |config|
   config.url = "https://www.geraldinepoly.com" # the base hostname & protocol for your site
 
   init :"bridgetown-sitemap"
+
+  init :"bridgetown-seo-tag"
 end

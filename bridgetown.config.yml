@@ -48,3 +48,10 @@ collections:
     output: true
     sort_by: date
     sort_direction: ascending
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://res.cloudinary.com/adrien/image/upload/v1685565440/geraldine-poly/social_2.jpg
+      lang: fr_FR

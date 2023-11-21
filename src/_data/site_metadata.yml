@@ -5,11 +5,10 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Geraldine POLY
-tagline: Coach décoration à Bordeaux
+tagline: "Une décoration qui fait du bien : Coach décoration à Bordeaux"
 email: geraldinepoly@outlook.com
+image: https://res.cloudinary.com/adrien/image/upload/v1685565440/geraldine-poly/social_2.jpg
 description: >-
-  Geraldine POLY : Coach décoration et consultante Feng Shui à Bordeaux. Je propose des services de coach décoration pour des espaces ou on se sent bien. J'accompagne les particuliers et les professionnels dans leurs projets de décoration et d'aménagement intérieur.
-tagline:  Une décoration qui fait du bien
+  Geraldine POLY : Coach décoration et consultante Feng Shui à Bordeaux. Je propose des services de décoratrice pour des espaces ou on se sent bien. J'accompagne les particuliers et les professionnels dans leurs projets de décoration et d'aménagement intérieur.
 image_url: https://res.cloudinary.com/adrien/image/upload/v1685565440/geraldine-poly/social_2.jpg
-# locale: fr-FR
-
+lang: fr_FR
