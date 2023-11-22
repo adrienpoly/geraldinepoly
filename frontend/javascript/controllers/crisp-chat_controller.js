@@ -22,12 +22,14 @@ export default class extends Controller {
     s.src = 'https://client.crisp.chat/l.js'
     s.async = true
     d.getElementsByTagName('head')[0].appendChild(s)
-    setTimeout(() => {
-      const client = document.querySelector('.crisp-client')
-      client.id = 'crisp-client'
-      client.setAttribute('data-turbo-permanent', 'true')
-      window.$crisp.push(['on', 'message:sent', this.sendEvent.bind(this)])
-    }, 1000)
+    window.$crisp.push(['on', 'message:sent', this.sendEvent.bind(this)])
+    window.$crisp.push(['on', 'session:loaded', this.setAsPermanent.bind(this)])
+  }
+
+  setAsPermanent () {
+    const client = document.querySelector('.crisp-client')
+    client.id = 'crisp-client'
+    client.setAttribute('data-turbo-permanent', 'true')
   }
 
   show (e) {
