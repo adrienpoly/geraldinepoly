@@ -35,10 +35,12 @@ Le prix de la carte cadeau coaching est de 80€ TTC.
 
 ### Comment offrir une carte cadeau ?
 
-Vous pouvez payer directement en ligne avec ce lien : [Acheter la carte cadeau](https://buy.stripe.com/3cscOddoQeokf84eUU)
+Vous pouvez payer directement en ligne avec ce lien :
+
+<button class="btn btn-primary" href="https://buy.stripe.com/3cscOddoQeokf84eUU" target="_blank">Payer en ligne</button>
 
 Vous recevrez sous 24h un email avec la carte cadeau à imprimer.
 
 Pour toutes questions, n'hésitez pas à me contacter
 
-<button class="btn btn-primary" data-action="click->crisp-chat#show">En savoir plus</button>
+<button class="btn btn-secondary" data-action="click->crisp-chat#show">En savoir plus</button>
