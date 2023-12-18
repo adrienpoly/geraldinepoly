@@ -23,6 +23,7 @@ export default class extends Controller {
     s.async = true
     d.getElementsByTagName('head')[0].appendChild(s)
     window.$crisp.push(['on', 'message:sent', this.sendEvent.bind(this)])
+    window.$crisp.push(['on', 'chat:opened', this.sendChatOpenedEvent.bind(this)])
     window.$crisp.push(['on', 'session:loaded', this.setAsPermanent.bind(this)])
   }
 
@@ -48,5 +49,12 @@ export default class extends Controller {
         event_label: 'chat'
       })
     }
+  }
+
+  sendChatOpenedEvent () {
+    window.gtag('event', 'chat_opened', {
+      event_category: 'engagement',
+      event_label: 'chat'
+    })
   }
 }
