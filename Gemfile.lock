@@ -63,6 +63,7 @@ GEM
     connection_pool (2.4.1)
     drb (2.2.0)
       ruby2_keywords
+    erb_lint (0.0.4)
     erubi (1.12.0)
     faraday (2.8.1)
       base64
@@ -93,14 +94,14 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     mutex_m (0.2.0)
-    nio4r (2.5.8)
+    nio4r (2.7.0)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     prettier_print (1.2.1)
     public_suffix (5.0.4)
-    puma (5.6.5)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (3.0.8)
@@ -150,6 +151,7 @@ DEPENDENCIES
   bridgetown-sitemap (~> 2.0)
   bridgetown-svg-inliner (~> 2.0)
   byebug
+  erb_lint (~> 0.0.4)
   minitest
   minitest-profile
   minitest-reporters
