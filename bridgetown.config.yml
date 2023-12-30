@@ -21,6 +21,7 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 template_engine: erb
+encoding: utf-8
 
 # Other options you might want to investigate:
 #
