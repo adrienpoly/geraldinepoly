@@ -1,5 +1,5 @@
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <%= seo %>
 
@@ -8,12 +8,12 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
 <link rel="manifest" href="/static/site.webmanifest">
 
-<link rel="stylesheet" href="<%= webpack_path :css %>" />
+<link rel="stylesheet" href="<%= webpack_path :css %>">
 <script src="<%= webpack_path :js %>" defer></script>
 <%= live_reload_dev_js %>
 
 <% if Bridgetown.env.production? %>
-  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2LNLLE7EJ"></script>
   <script>

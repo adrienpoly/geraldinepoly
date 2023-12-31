@@ -28,10 +28,9 @@ gem "bridgetown", "~> 1.2.0"
 # of your HTML or XML resources:
 # gem "nokogiri", "~> 1.13"
 
-# Puma is a Rack-compatible server used by Bridgetown
+## Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 5.6"
-
+gem "puma"
 
 group :test, optional: true do
   gem "nokogiri"
@@ -50,3 +49,5 @@ gem "bridgetown-svg-inliner", "~> 2.0"
 gem "bridgetown-sitemap", "~> 2.0"
 
 gem 'bridgetown-seo-tag'
+
+gem "erb_lint", "~> 0.0.4"

@@ -4,7 +4,6 @@
     <a href="<%= relative_url '/prestations' %>">Prestations</a>
     <%= link_to "Réalisations", "/projects" %>
 
-
   </div>
   <a href="<%= relative_url '/' %>">
     <%= render Logo.new class: "h-32 fill-primary" %>
@@ -16,10 +15,9 @@
   </div>
 </nav>
 
-
 <nav class="relative flex h-full w-full items-center justify-between gap-4 p-4 sm:hidden">
     <a href="/" class="flex gap-4 items-center">
-      <%= svg "images/cat.svg", class: "h-10 fill-primary", alt: "maneki-neko le chat qui apporte prospérité et bonheur" %>
+      <%#= svg "images/cat.svg", class: "h-10 fill-primary", alt: "maneki-neko le chat qui apporte prospérité et bonheur" %>
       <div class="text-xl text-primary font-semibold">Géraldine POLY</div>
     </a>
   <details class="inline-block text-left">
@@ -31,9 +29,7 @@
       </div>
     </summary>
 
-    <details-menu
-      role="menu"
-    >
+    <details-menu role="menu">
       <ul role="none">
         <%= link_to "Prestations", "/prestations" %>
         <%= link_to "Réalisations", "/projects" %>
@@ -41,7 +37,7 @@
         <%= link_to "À propos", "/a-propos" %>
         <%= link_to "Contact", "/contact" %>
         <div class="border border-1 border-gray-lightest w-3/5"></div>
-        <%= render "links" %>
+        <%= partial template: "links" %>
       </ul>
     </details-menu>
   </details>
