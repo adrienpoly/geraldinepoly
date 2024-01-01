@@ -42,6 +42,10 @@ group :test, optional: true do
   gem "rails-dom-testing"
 end
 
+group :development do
+  gem "image_processing"
+end
+
 gem "ruby-lsp"
 gem "byebug"
 
