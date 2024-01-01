@@ -19,7 +19,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.2.0"
+gem "bridgetown"
 
 # Uncomment to add file-based dynamic routing to your project:
 # gem "bridgetown-routes", "~> 1.2.0"
@@ -30,7 +30,7 @@ gem "bridgetown", "~> 1.2.0"
 
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 5.6"
+gem "puma"
 
 
 group :test, optional: true do
@@ -45,8 +45,7 @@ end
 gem "ruby-lsp"
 gem "byebug"
 
-gem "bridgetown-svg-inliner", "~> 2.0"
-
-gem "bridgetown-sitemap", "~> 2.0"
+gem "bridgetown-svg-inliner"
+gem "bridgetown-sitemap"
 
 gem 'bridgetown-seo-tag'
