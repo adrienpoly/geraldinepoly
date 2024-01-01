@@ -4,7 +4,7 @@
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
   <body class="antialiased <%= data.layout %> <%= data.page_class %>" data-controller="crisp-chat">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+    <%= render "navbar", metadata: site.metadata, resource: resource %>
 
     <main class="container min-h-[calc(100vh-10rem)] sm:min-h-[calc(100vh-16rem)]">
       <%= yield %>
