@@ -108,7 +108,10 @@ layout: default
     <div class="grid md:grid-cols-2 gap-4">
       <div class="flex flex-col justify-around items-center gap-4">
         <div>Tous les mois, je vous partage mes conseils déco et Feng Shui pour vous sentir bien chez vous.</div>
-        <a href="https://geraldinepoly.substack.com/subscribe" class="btn btn-primary" target="_blank">Je découvre la newsletter</a>
+        <div class="flex items-center gap-4">
+          <a href="/newsletters" class="btn-link" target="_blank">archive</a>
+          <a href="https://geraldinepoly.substack.com/subscribe" class="btn btn-primary" target="_blank">Je découvre la newsletter</a>
+        </div>
       </div>
       <a href="https://geraldinepoly.substack.com/subscribe" target="_blank">
         <%= render CloudinaryImage.new(
