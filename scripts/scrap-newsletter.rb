@@ -6,7 +6,7 @@ require 'image_processing/vips'
 
 # Function to slugify a string
 def slugify(text)
-  text.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  text.downcase.strip.gsub(/[^a-z0-9\s]/, '').gsub(/\s+/, '-')
 end
 
 # Fetch and parse the RSS feed
@@ -26,7 +26,7 @@ feed.xpath('//item').each do |item|
   image_url = item.xpath('enclosure').first['url']
   link = item.xpath('link').text.strip
 
-  image_name = slugify("#{pub_date}-#{title}")
+  image_name = "#{pub_date}-#{slugify(title)}"
   image_path = "src/images/newsletters/#{image_name}.jpg"
   md_file_path = "src/_newsletters/#{image_name}.md"
 

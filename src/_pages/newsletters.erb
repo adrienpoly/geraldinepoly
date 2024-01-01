@@ -1,0 +1,29 @@
+---
+title: "Articles de Géraldine POLY : décoratrice, coaching décoration, consultante Feng Shui à Bordeaux"
+description: |
+  La décoration à Bordeaux qui fait du bien. Ici je partages mes conseils, adresses et astuces pour vous aider à vous sentir bien chez vous.
+layout: default
+path: test
+---
+
+<h1 class="text-center mt-8 mb-12">La newsletter déco qui fait du bien</h1>
+
+<section class="flex flex-col gap-8 md:gap-12" id="articles">
+  <% collections.newsletters.resources.each do |post| %>
+    <a href="<%= post.data.link %>" target="_blank">
+      <div class="flex md:gap-4 lg:gap-8 items-center">
+        <div class="shrink-0">
+          <%#= render CloudinaryImage.new(width: 200, height: 200, image_id: post.data.image_id, loading: "lazy", class: "hidden md:flex mt-2 shrink-0", alt: "illustration de l'article :#{post.data.title}") %>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3><%= post.data.title %></h3>
+
+          <div>
+            <%#= render CloudinaryImage.new(width: 100, height: 100, image_id: post.data.image_id, loading: "lazy", class: "float-left mr-2 mb-2 mt-2 md:hidden", alt: "illustration de l'article :#{post.data.title}") %>
+            <div><%= post.data.description %></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</section>
