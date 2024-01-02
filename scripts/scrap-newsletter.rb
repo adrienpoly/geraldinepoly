@@ -47,7 +47,7 @@ feed.xpath('//item').each do |item|
     # Create a markdown file for the newsletter
     File.open(md_file_path, 'w') do |file|
       file.puts "---"
-      file.puts "layout: newsletter"
+      file.puts "layout: default"
       file.puts "title: \"#{title}\""
       file.puts "description: \"#{description}\""
       file.puts "date: #{pub_date}"

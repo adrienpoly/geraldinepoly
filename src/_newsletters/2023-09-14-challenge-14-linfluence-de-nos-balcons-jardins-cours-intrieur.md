@@ -1,5 +1,5 @@
 ---
-layout: newsletter
+layout: default
 title: "Challenge #14 : L'influence de nos balcons, jardins, cours intérieur..."
 description: "Transformer votre espace extérieur en un havre de paix."
 date: 2023-09-14

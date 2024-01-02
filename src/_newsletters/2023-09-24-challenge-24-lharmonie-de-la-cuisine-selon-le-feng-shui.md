@@ -1,5 +1,5 @@
 ---
-layout: newsletter
+layout: default
 title: "Challenge #24 : L'harmonie de la cuisine selon le Feng Shui"
 description: "Les conseils à suivre"
 date: 2023-09-24

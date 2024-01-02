@@ -1,5 +1,5 @@
 ---
-layout: newsletter
+layout: default
 title: "La news déco qui fait du bien #1 : Réutiliser pour Créer"
 description: "Plongez dans notre newsletter mensuelle mettant en lumière la collaboration éco-créative avec la designer Sonia Laudet. Explorez la tendance du recyclage décoratif, des astuces pour une illumination optimale à l'approche de l'hiver, et une célébration de l'art durable."
 date: 2023-11-04

@@ -1,5 +1,5 @@
 ---
-layout: newsletter
+layout: default
 title: "Challenge #13 : green, green, green..."
 description: "Les Plantes dans nos Intérieurs"
 date: 2023-09-13

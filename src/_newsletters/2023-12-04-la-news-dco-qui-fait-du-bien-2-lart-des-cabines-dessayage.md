@@ -1,5 +1,5 @@
 ---
-layout: newsletter
+layout: default
 title: "La news déco qui fait du bien #2 : l'art des cabines d'essayage"
 description: "Quand la créativité rencontre la mode"
 date: 2023-12-04
