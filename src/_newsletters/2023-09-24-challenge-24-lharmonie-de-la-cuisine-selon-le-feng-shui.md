@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Challenge #24 : L'harmonie de la cuisine selon le Feng Shui"
-description: "Les conseils à suivre"
+description: >
+  Découvrez comment créer une cuisine harmonieuse avec les principes du Feng Shui. Apprenez à choisir la forme idéale de la table, à gérer l'agencement des appareils et à organiser les espaces pour un environnement équilibré et prospère.
 date: 2023-09-24
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-24-lharmonie-de-la-cuisine
