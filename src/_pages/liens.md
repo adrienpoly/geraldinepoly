@@ -16,3 +16,4 @@ description: "Mes liens et présence en ligne pour Geraldine Poly, décoratrice 
 - [Assistant décoration Feng Shui](https://chat.openai.com/g/g-pBGXtmqcc-harmony-advisor)
 - [Assistant couleur](https://chat.openai.com/g/g-WnDRILnEn-color-harmony)
 - [Proven Expert](https://www.provenexpert.com/geraldinepoly/)
+- [Annuaire Coaching](https://annuaire-coaching.fr/geraldine-poly-coach-en-decoration-dinterieur/)
