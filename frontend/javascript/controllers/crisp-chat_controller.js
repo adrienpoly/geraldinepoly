@@ -44,6 +44,7 @@ export default class extends Controller {
   sendEvent () {
     if (!this.messageSent) {
       this.messageSent = true
+      window.dataLayer.push({ event: 'message_sent' })
       window.gtag('event', 'message_sent', {
         event_category: 'engagement',
         event_label: 'chat'
@@ -52,6 +53,7 @@ export default class extends Controller {
   }
 
   sendChatOpenedEvent () {
+    window.dataLayer.push({ event: 'chat_opened' })
     window.gtag('event', 'chat_opened', {
       event_category: 'engagement',
       event_label: 'chat'
