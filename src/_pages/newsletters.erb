@@ -8,13 +8,19 @@ path: test
 
 <h1 class="text-center mt-8 mb-12">La newsletter déco qui fait du bien</h1>
 
+<section class="my-8 flex flex-col gap-4 items-start">
+  <div>Tous les mois, je vous partage mes conseils déco et Feng Shui pour vous sentir bien chez vous.</div>
+  <a href="https://geraldinepoly.substack.com/subscribe" class="btn btn-primary" target="_blank">Je m'inscris</a>
+</section>
+
+
 <section class="flex flex-col gap-8 md:gap-12" id="articles">
   <% collections.newsletters.resources.each do |post| %>
     <a href="<%= post.data.link %>" target="_blank">
       <div class="flex md:gap-4 lg:gap-8 items-center">
-        <div class="shrink-0">
+        <!--<div class="shrink-0">-->
           <%#= render CloudinaryImage.new(width: 200, height: 200, image_id: post.data.image_id, loading: "lazy", class: "hidden md:flex mt-2 shrink-0", alt: "illustration de l'article :#{post.data.title}") %>
-        </div>
+        <!--</div>-->
         <div class="flex flex-col gap-4">
           <h3><%= post.data.title %></h3>
 

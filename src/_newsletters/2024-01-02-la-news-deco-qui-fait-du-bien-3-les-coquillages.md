@@ -6,4 +6,5 @@ description: >
 date: 2024-01-02
 link: https://geraldinepoly.substack.com/p/la-news-deco-qui-fait-du-bien-3-les
 image: src/images/newsletters/2024-01-02-la-news-dco-qui-fait-du-bien-3-les-coquillages.jpg
+sitemap: false
 ---
