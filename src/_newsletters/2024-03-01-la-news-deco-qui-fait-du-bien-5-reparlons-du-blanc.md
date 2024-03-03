@@ -5,4 +5,5 @@ description: "Reparlons du blanc : Blanc comme neige... Blanchir de l'argent... 
 date: 2024-03-01
 link: https://geraldinepoly.substack.com/p/la-news-deco-qui-fait-du-bien-5-reparlons
 image: src/images/newsletters/2024-03-01-la-news-deco-qui-fait-du-bien-5-reparlons-du-blanc.jpg
+sitemap: false
 ---

@@ -52,6 +52,7 @@ feed.xpath('//item').each do |item|
       file.puts "description: \"#{description}\""
       file.puts "date: #{pub_date}"
       file.puts "link: #{link}"
+      file.puts "sitemap: false"
       file.puts "image: #{image_path}"
       file.puts "---"
     end
