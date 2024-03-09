@@ -3,7 +3,7 @@ layout: post
 title: "La Maison RêVée : Un tiers-lieu éco-conçu grâce à la récupération participative"
 description: >
   Découvrez le projet éco-responsable de la Maison RêVée à Bègles. Ce tiers-lieu zéro déchet sera aménagé de façon participative à partir de matériaux recyclés. Pistes de décoratrice : mobilier éco-conçu, peintures naturelles, jardin pédagogique.
-image_id: maison-revee-begles-geraldine-poly
+image_id: maison-revee-begles-geraldine-poly-2
 ---
 
 À Bègles, un nouveau tiers-lieu a ouvert : [la maison Rêvée](https://maisonrevee.org/). Cet espace a pour objectif de devenir un véritable tiers-lieu aménagé de manière participative, en impliquant différents publics dans la récupération, le détournement et la mise en valeur de matériaux, meubles et objets de récupération.

@@ -6,6 +6,8 @@ description: >
 image_id: tri-january-detox-maison
 ---
 
+https://jeparticipe.gironde.fr/blog/le-projet-damenagement-de-la-maison-revee-vu-par-geraldine-poly
+
 Janvier est souvent associé à de nouveaux départs et à la mise en place de résolutions. Inspiré par le concept de "Dry January", je vous propose le "Tri January", une initiative visant à purifier et à revigorer nos espaces de vie. Soyons bien clair, l'objectif n'est pas de trier sa cave, mais bien une opportunité pour une détox de votre maison, permettant ainsi à l'énergie de circuler librement.
 
 ## L'Énergie du Vide
