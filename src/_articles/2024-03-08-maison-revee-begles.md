@@ -6,7 +6,7 @@ description: >
 image_id: maison-revee-begles-geraldine-poly-2
 ---
 
-À Bègles, un nouveau tiers-lieu a ouvert : [la maison Rêvée](https://maisonrevee.org/). Cet espace a pour objectif de devenir un véritable tiers-lieu aménagé de manière participative, en impliquant différents publics dans la récupération, le détournement et la mise en valeur de matériaux, meubles et objets de récupération.
+À Bègles, un nouveau tiers-lieu a ouvert : [la Maison RêVée](https://maisonrevee.org/). Cet espace a pour objectif de devenir un véritable tiers-lieu, aménagé de manière participative en impliquant différents publics dans la récupération, le détournement et la mise en valeur de matériaux, meubles et objets de récupération.
 
 J'ai eu l'opportunité de découvrir très tôt ce projet et de réaliser un avant-projet sous la forme de [planches d'inspiration](https://jeparticipe.gironde.fr/blog/le-projet-damenagement-de-la-maison-revee-vu-par-geraldine-poly) pour ce lieu unique.
 
@@ -14,8 +14,7 @@ Voici les grandes lignes de mon projet pour la Maison RêVée :
 
 ## Un mobilier éco-conçu
 
-Au cœur de mes propositions, on retrouve la conception de mobilier sur mesure à partir de matériaux de récupération.
-L'un des objectifs du lieux et de faire participer les publics impliqué dans cette démarche de récupération et de transformation. Cette démarche permettra non seulement de donner une seconde vie à des matériaux voués au rebut, mais aussi de transmettre des savoir-faire précieux en matière d'éco-conception.
+Au cœur de mes propositions, on retrouve la conception de mobilier sur mesure à partir de matériaux de récupération. L'un des objectifs du lieu est de faire participer les publics impliqués dans cette démarche de récupération et de transformation. Cette démarche permettra non seulement de donner une seconde vie à des matériaux voués au rebut, mais aussi de transmettre des savoir-faire précieux en matière d'éco-conception.
 
 ## Une décoration respectueuse de l'environnement
 
@@ -28,7 +27,3 @@ Pour habiller les murs et apporter une touche chaleureuse à la Maison RêVée, 
 Ce projet participatif est une véritable opportunité de créer un lieu chaleureux et accueillant, tout en promouvant des pratiques éco-responsables. En impliquant différents publics dans l'aménagement de la Maison RêVée, nous contribuons à renforcer le lien social et à transmettre des valeurs essentielles pour la préservation de notre environnement.
 
 Vous pouvez découvrir les planches d'inspiration que j'ai réalisées pour la Maison RêVée sur le site de la [Gironde Participe](https://jeparticipe.gironde.fr/blog/le-projet-damenagement-de-la-maison-revee-vu-par-geraldine-poly).
-
-```
-
-```
