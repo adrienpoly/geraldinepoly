@@ -6,5 +6,6 @@ description: >
 date: 2023-12-04
 sitemap: false
 link: https://geraldinepoly.substack.com/p/la-news-deco-qui-fait-du-bien-2-lart
-image: src/images/newsletters/2023-12-04-la-news-dco-qui-fait-du-bien-2-lart-des-cabines-dessayage.jpg
+image: /images/newsletters/2023-12-04-la-news-dco-qui-fait-du-bien-2-lart-des-cabines-dessayage.jpg
+thumb_image: /images/newsletters/thumb_2023-12-04-la-news-dco-qui-fait-du-bien-2-lart-des-cabines-dessayage.jpg
 ---

@@ -6,5 +6,5 @@ description: >
 date: 2023-09-15
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-16-christina-sort-de-ce
-image: src/images/newsletters/2023-09-15-challenge-15-christina-sort-de-ce-dressing-.jpg
+image: /images/newsletters/2023-09-15-challenge-15-christina-sort-de-ce-dressing-.jpg
 ---

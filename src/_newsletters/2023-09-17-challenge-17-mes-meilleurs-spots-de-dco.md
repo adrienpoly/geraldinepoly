@@ -6,5 +6,6 @@ description: >
 date: 2023-09-17
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-17-mes-meilleurs-spots
-image: src/images/newsletters/2023-09-17-challenge-17-mes-meilleurs-spots-de-dco.jpg
+image: /images/newsletters/2023-09-17-challenge-17-mes-meilleurs-spots-de-dco.jpg
+thumb_image: /images/newsletters/thumb_2023-09-17-challenge-17-mes-meilleurs-spots-de-dco.jpg
 ---

@@ -6,5 +6,6 @@ description: >
 date: 2023-09-24
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-24-lharmonie-de-la-cuisine
-image: src/images/newsletters/2023-09-24-challenge-24-lharmonie-de-la-cuisine-selon-le-feng-shui.jpg
+image: /images/newsletters/2023-09-24-challenge-24-lharmonie-de-la-cuisine-selon-le-feng-shui.jpg
+thumb_image: /images/newsletters/thumb_2023-09-24-challenge-24-lharmonie-de-la-cuisine-selon-le-feng-shui.jpg
 ---

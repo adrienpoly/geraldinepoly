@@ -5,5 +5,6 @@ description: "Plongez dans notre challenge de 30 jours explorant la puissance et
 date: 2023-09-30
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-30-50-nuances-de-spritz
-image: src/images/newsletters/2023-09-30-challenge-30-50-nuances-de-spritz-.jpg
+image: /images/newsletters/2023-09-30-challenge-30-50-nuances-de-spritz-.jpg
+thumb_image: /images/newsletters/thumb_2023-09-30-challenge-30-50-nuances-de-spritz-.jpg
 ---

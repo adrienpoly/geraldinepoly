@@ -5,5 +5,6 @@ description: "Découvrez comment transformer votre intérieur en un espace bienf
 date: 2023-09-18
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-18-la-puissance-des-couleurs
-image: src/images/newsletters/2023-09-18-challenge-18-la-puissance-des-couleurs-au-salon-maison-et-objet.jpg
+image: /images/newsletters/2023-09-18-challenge-18-la-puissance-des-couleurs-au-salon-maison-et-objet.jpg
+thumb_image: /images/newsletters/thumb_2023-09-18-challenge-18-la-puissance-des-couleurs-au-salon-maison-et-objet.jpg
 ---

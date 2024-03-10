@@ -5,5 +5,6 @@ description: "Découvrez comment les petits bruits du quotidien tels que les gri
 date: 2023-09-19
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-19-les-petits-bruits-qui
-image: src/images/newsletters/2023-09-19-challenge-19-les-petits-bruits-qui-perturbent-votre-bientre-intrieur.jpg
+image: /images/newsletters/2023-09-19-challenge-19-les-petits-bruits-qui-perturbent-votre-bientre-intrieur.jpg
+thumb_image: /images/newsletters/thumb_2023-09-19-challenge-19-les-petits-bruits-qui-perturbent-votre-bientre-intrieur.jpg
 ---

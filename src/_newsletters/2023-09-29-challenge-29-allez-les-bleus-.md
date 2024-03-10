@@ -5,5 +5,6 @@ description: "Découvrez l'évasion mentale et la puissante symbolique du bleu. 
 date: 2023-09-29
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-29-allez-les-bleus
-image: src/images/newsletters/2023-09-29-challenge-29-allez-les-bleus-.jpg
+image: /images/newsletters/2023-09-29-challenge-29-allez-les-bleus-.jpg
+thumb_image: /images/newsletters/thumb_2023-09-29-challenge-29-allez-les-bleus-.jpg
 ---
