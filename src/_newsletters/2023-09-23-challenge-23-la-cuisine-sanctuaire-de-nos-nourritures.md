@@ -5,5 +5,6 @@ description: "Découvrez l'importance des origines et énergies de nos aliments 
 date: 2023-09-23
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-23-la-cuisine-sanctuaire
-image: src/images/newsletters/2023-09-23-challenge-23-la-cuisine-sanctuaire-de-nos-nourritures.jpg
+image: /images/newsletters/2023-09-23-challenge-23-la-cuisine-sanctuaire-de-nos-nourritures.jpg
+thumb_image: /images/newsletters/thumb_2023-09-23-challenge-23-la-cuisine-sanctuaire-de-nos-nourritures.jpg
 ---

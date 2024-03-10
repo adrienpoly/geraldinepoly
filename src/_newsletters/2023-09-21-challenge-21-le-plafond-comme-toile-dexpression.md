@@ -5,5 +5,6 @@ description: "Redécouvrez le potentiel du 'cinquième mur' de votre intérieur 
 date: 2023-09-21
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-21-le-plafond-comme-toile
-image: src/images/newsletters/2023-09-21-challenge-21-le-plafond-comme-toile-dexpression.jpg
+image: /images/newsletters/2023-09-21-challenge-21-le-plafond-comme-toile-dexpression.jpg
+thumb_image: /images/newsletters/thumb_2023-09-21-challenge-21-le-plafond-comme-toile-dexpression.jpg
 ---

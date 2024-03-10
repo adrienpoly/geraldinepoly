@@ -6,5 +6,6 @@ description: >
 date: 2023-09-16
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-16-les-goods-vibes-de-nos
-image: src/images/newsletters/2023-09-16-challenge-16-les-goods-vibes-de-nos-objets.jpg
+image: /images/newsletters/2023-09-16-challenge-16-les-goods-vibes-de-nos-objets.jpg
+thumb_image: /images/newsletters/thumb_2023-09-16-challenge-16-les-goods-vibes-de-nos-objets.jpg
 ---

@@ -5,5 +5,6 @@ description: "Plongez dans l'art de la table et découvrez comment allier créat
 date: 2023-09-25
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-25-lart-de-recevoir-les
-image: src/images/newsletters/2023-09-25-challenge-25-lart-de-recevoir-les-arts-de-la-table.jpg
+image: /images/newsletters/2023-09-25-challenge-25-lart-de-recevoir-les-arts-de-la-table.jpg
+thumb_image: /images/newsletters/thumb_2023-09-25-challenge-25-lart-de-recevoir-les-arts-de-la-table.jpg
 ---
