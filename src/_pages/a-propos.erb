@@ -6,42 +6,39 @@ layout: default
 ---
 <div class="prose">
   <h1 class="text-center mt-8 mb-12">Qui suis-je ?</h1>
-  <div class="flex gap-8 flex-wrap md:flex-nowrap">
+  <!-- flex gap-8 flex-wrap md:flex-nowrap-->
+  <div class="">
+    <div class="mb-8 md:float-right md:w-72 md:ml-8">
+      <%= render CloudinaryImage.new(image_id: "geraldine-poly", width: 400) %>
+    </div>
     <div>
       <div>Géraldine POLY, décoratrice et consultante Feng Shui, je vous aide à transformer vos espaces de vie et de travail en lieux <strong>alliant bien-être et élégance.</strong></div>
       <p>Spécialisée dans la création d'espaces où <strong>confort et esthétique se conjuguent</strong>, je possède une sensibilité innée pour le choix des couleurs et au fil de ma carrière j'ai acqui une expertise approfondie des textiles, des matériaux et des <strong>harmonies de couleurs</strong>.</p>
       <p>Je propose une gamme complète de services, allant de <strong>conseils personnalisés</strong> – tels que la <strong>sélection de couleurs, de papiers peints, de matériaux</strong>, d'agencements et de systèmes d'éclairage – à la prise en charge de projets complet, incluant la <strong>transformation totale d'espaces</strong> ou la réinvention d'une pièce.</p>
     </div>
-    <div class="w-full md:w-72 lg:w-full shrink-0">
-      <%= render CloudinaryImage.new(image_id: "geraldine-poly", width: 400) %>
-    </div>
+    <!-- w-full md:w-72 lg:w-full shrink-0-->
   </div>
 
-  <div class="flex gap-8 flex-wrap md:flex-nowrap mt-8 items-center">
-    <div>
-      <h2 class="mb-4">Formation en Stylisme et Modélisme</h2>
-      <p>J'ai amorcé mon voyage créatif en suivant une formation en stylisme et modélisme. Dès mon plus jeune âge, j'ai été attirée par les tissus, les couleurs et l'univers de la mode. Ma passion m'a conduit à chiner des vêtements et à créer des looks uniques.</p>
-      <p>J'ai travaillé dans un premier temps dans l'enfant puis dans le surf pour la marque Oxbow</p>
-    </div>
-
-    <div class="w-full md:w-72 flex flex-col gap-2 shrink-0">
-      <%= render CloudinaryImage.new(image_id: "costard-surf-laird-hamilton-oxbow", width: 400) %>
-      <div class="text-sm text-center">Une de mes créations amblématique chez Oxbow : le costard surf de Laird Hamilton qu'il a utilisé lors du lancement du Sand up paddle</div>
-    </div>
-  </div>
-
-  <h2 class="mt-8 mb-4">Découverte de l'Univers de la Décoration</h2>
-  <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
-    <div class="w-full md:w-72 lg:w-full shrink-0">
+  <div class="clear-both my-12"></div>
+  <div class="">
+    <h2 class="mb-4">Formation en Stylisme et Modélisme</h2>
+    <div class="mb-8 md:float-right md:w-72 md:ml-8">
       <%= render CloudinaryImage.new(image_id: "costard-surf-laird-hamilton-oxbow", width: 400) %>
     </div>
     <div>
-      Mon désir d'exploration m'a ensuite conduit vers le monde de la décoration. J'ai saisi l'opportunité de plonger dans cet univers captivant, où j'ai pu développer mes compétences et ma créativité. J'ai conçu de nombreux produits, à la fois pour des clients individuels et pour des enseignes de grande distribution.
+      <p>J'ai amorcé mon voyage créatif en suivant une formation en stylisme et modélisme (ESMOD). Dès mon plus jeune âge, j'ai été attirée par <strong>les tissus, les couleurs et l'univers de la mode</strong>. Ma passion m'a conduit à chiner des vêtements et à créer des looks uniques.</p>
+      <p>J'ai travaillé dans un premier temps dans l'enfant puis dans <strong>le surf pour la marque Oxbow</strong>. Pour la petite histoire, une de mes créations amblématique chez Oxbow a été <strong>le costard surf de Laird Hamilton</strong> qu'il a utilisé lors du lancement du Sand Up Paddle</p>
+    </div>
+    <h2 class="mt-8 mb-4">Découverte de l'Univers de la Décoration</h2>
+    <div>
+      Mon désir d'exploration m'a ensuite conduit vers le monde de <strong>la décoration</strong>. J'ai conçu de nombreux produits, à la fois pour des clients individuels et pour des grands comptes : enseignes de grande distribution.
     </div>
   </div>
 
-  <h2 class="mt-8 mb-4 clear-both">Direction Artistique chez Marketset</h2>
-  Mon parcours m'a ensuite conduit à une expérience passionnante en tant que directrice artistique au sein de la marque Marketset. Aux côtés d'une équipe talentueuse, j'ai contribué à créer des produits devenus des best-sellers. Ces créations sont aujourd'hui fièrement présentées dans des magazines de décoration de renom, consolidant notre position dans l'industrie.
+  <div class="clear-both my-12"></div>
+
+  <h2 class="mt-8 mb-4 clear-both">Des luminaires emblématiques</h2>
+  Mon parcours m'a ensuite conduit à une expérience passionnante en tant que <strong>directrice artistique de la marque Marketset</strong>. Aux côtés d'une équipe talentueuse, j'ai créer des <strong>produits devenus des best-sellers</strong>. Ces créations sont aujourd'hui fièrement présentées dans des magazines de décoration de renom, consolidant la position de la marque Marketset dans l'industrie de la décoration.
 
   <% lightings = [
       {
@@ -86,14 +83,5 @@ layout: default
       <div data-carousel-target="dots" role="tablist" class="glider-dots"></div>
     </div>
   </section>
-  <h2 class="mt-8 mb-4 clear-both">Une Pause pour Prendre Soin de Moi</h2>
-  Cependant, la vie m'a réservé des défis, parfois chaotiques et exigeants. J'ai dû prendre du temps pour prendre soin de moi, ce qui a nécessité une pause prolongée.
-
-  <h2 class="mt-8 mb-4 clear-both">Entrepreneuse et Coach en Décoration Bien-Être</h2>
-  Aujourd'hui, je suis de retour en tant qu’entrepreneuse.
-
-  En tant que coach en décoration bien-être, j'ai développé un univers visant à vous aider à vous sentir bien chez vous.
-
-  La maximisation du potentiel de vos espaces intérieurs est possible grâce à ma méthode basée sur le Feng Shui et le pouvoir des couleurs.
 </div>
 
