@@ -5,5 +5,6 @@ description: "Découvrez comment le papier peint est devenu un élément d'expre
 date: 2023-09-20
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-20-pourquoi-et-comment
-image: src/images/newsletters/2023-09-20-challenge-20-pourquoi-et-comment-succomber-aux-sirnes-du-papier-peint-.jpg
+image: /images/newsletters/2023-09-20-challenge-20-pourquoi-et-comment-succomber-aux-sirnes-du-papier-peint-.jpg
+thumb_image: /images/newsletters/thumb_2023-09-20-challenge-20-pourquoi-et-comment-succomber-aux-sirnes-du-papier-peint-.jpg
 ---

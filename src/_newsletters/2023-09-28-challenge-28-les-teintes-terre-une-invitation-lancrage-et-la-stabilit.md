@@ -5,5 +5,6 @@ description: "Découvrez la tendance 'Quiet Luxury' dans la mode, une élégance
 date: 2023-09-28
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-28-les-teintes-terre-une
-image: src/images/newsletters/2023-09-28-challenge-28-les-teintes-terre-une-invitation-lancrage-et-la-stabilit.jpg
+image: /images/newsletters/2023-09-28-challenge-28-les-teintes-terre-une-invitation-lancrage-et-la-stabilit.jpg
+thumb_image: /images/newsletters/thumb_2023-09-28-challenge-28-les-teintes-terre-une-invitation-lancrage-et-la-stabilit.jpg
 ---

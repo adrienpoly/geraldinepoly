@@ -5,5 +5,6 @@ description: "Découvrez comment la couleur verte influence notre bien-être int
 date: 2023-09-26
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-26-parlons-couleur-le-vert
-image: src/images/newsletters/2023-09-26-challenge-26-parlons-couleur-le-vert-dans-tous-ses-tats-.jpg
+image: /images/newsletters/2023-09-26-challenge-26-parlons-couleur-le-vert-dans-tous-ses-tats-.jpg
+thumb_image: /images/newsletters/thumb_2023-09-26-challenge-26-parlons-couleur-le-vert-dans-tous-ses-tats-.jpg
 ---

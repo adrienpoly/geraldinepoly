@@ -6,5 +6,6 @@ description: >
 date: 2023-09-22
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-22-alors-comment-respirer
-image: src/images/newsletters/2023-09-22-challenge-22-alors-comment-respirer-tranquille-la-maison-.jpg
+image: /images/newsletters/2023-09-22-challenge-22-alors-comment-respirer-tranquille-la-maison-.jpg
+thumb_image: /images/newsletters/thumb_2023-09-22-challenge-22-alors-comment-respirer-tranquille-la-maison-.jpg
 ---

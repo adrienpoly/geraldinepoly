@@ -6,5 +6,6 @@ description: >
 date: 2023-09-27
 sitemap: false
 link: https://geraldinepoly.substack.com/p/challenge-27-le-blanc-et-ses-mysteres
-image: src/images/newsletters/2023-09-27-challenge-27-le-blanc-et-ses-mystres.jpg
+image: /images/newsletters/2023-09-27-challenge-27-le-blanc-et-ses-mystres.jpg
+thumb_image: /images/newsletters/thumb_2023-09-27-challenge-27-le-blanc-et-ses-mystres.jpg
 ---
