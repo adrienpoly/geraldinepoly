@@ -1,55 +1,176 @@
 ---
 layout: default
-title: Prestations de décoration et feng shui à Bordeaux
+title: Décoration intérieure à Bordeaux — des espaces où l'on se sent bien
 description: |-
-  Prestation décoration et feng shui à Bordeaux : coaching déco, coaching express, conseil Feng Shui, rénovation, aménagement, home staging, etc.
+  Décoration intérieure à Bordeaux : sublimer votre intérieur, clarifier vos choix, harmoniser les couleurs. Accompagnement de l'idée à la mise en scène finale.
 ---
 
-<h1 class="text-center mt-8 mb-12">Prestations</h1>
+<!-- HERO -->
+<section class="text-center py-16">
+  <h1 class="text-4xl font-bold mb-6">Décoration intérieure à Bordeaux — des espaces où l'on se sent bien</h1>
+  <p class="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
+    Sublimer votre intérieur, clarifier vos choix, harmoniser les couleurs. Je vous accompagne de l'idée à la mise en scène finale. Parlons‑en ensemble lors d'un appel découverte (30 min offert).
+  </p>
+  <div class="flex flex-col items-center gap-2">
+    <button class="btn btn-primary text-lg px-8 py-3" data-action="click->crisp-chat#show">Réserver l'appel découverte</button>
+  </div>
+</section>
 
-<div class="flex flex-col gap-12 pb-16">
-  <section>
-    <div class="bg-blue-50 rounded-lg p-8 flex flex-col gap-4">
-      <h2 class="text-2xl">Votre première consultation gratuite de 30 minutes!</h2>
-      <p>
-        Vous avez un projet de décoration, d'aménagement ou de rénovation? Vous souhaitez en savoir plus sur le Feng Shui et ses bienfaits? Vous avez besoin d'un conseil déco pour votre intérieur?
-      </p>
+<!-- LE PROCESS -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Un process simple, du premier échange au rendu final</h2>
 
-      <button class="btn btn-primary self-end" data-action="click->crisp-chat#show">Je réserve un créneau</button>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Étape 1 -->
+      <div class="flex flex-col">
+        <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">1</div>
+        <h3 class="text-xl font-semibold mb-3">Appel découverte</h3>
+        <p class="text-sm text-gray-500 mb-2">(30 min, offert)</p>
+        <p class="text-gray-700">Nous cadrons votre besoin, vos goûts, vos contraintes et le planning. Vous repartez avec la recommandation de prestation adaptée.</p>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="flex flex-col">
+        <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">2</div>
+        <h3 class="text-xl font-semibold mb-3">Visite & diagnostic</h3>
+        <p class="text-sm text-gray-500 mb-2">(Sur place ou visio)</p>
+        <p class="text-gray-700">Relevés, lumière, photos, premières pistes d'amélioration.</p>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="flex flex-col">
+        <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">3</div>
+        <h3 class="text-xl font-semibold mb-3">Conception</h3>
+        <p class="text-gray-700">Moodboards, palette couleurs, plans 2D/3D, sélection matériaux & mobilier, liste‑shopping, allers‑retours d'ajustement.</p>
+      </div>
+
+      <!-- Étape 4 -->
+      <div class="flex flex-col">
+        <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">4</div>
+        <h3 class="text-xl font-semibold mb-3">Mise en œuvre</h3>
+        <p class="text-gray-700">Aide aux devis, coordination esthétique avec les artisans, suivi des choix, commandes.</p>
+      </div>
+
+      <!-- Étape 5 -->
+      <div class="flex flex-col">
+        <div class="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">5</div>
+        <h3 class="text-xl font-semibold mb-3">Stylisme & suivi</h3>
+        <p class="text-gray-700">Mise en scène finale et disponibilité post‑projet pour les ajustements.</p>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-12 md:gap-8 lg:gap-16 items-start">
-      <% collections.prestations.resources.each do |prestation| %>
-        <span class="flex flex-col justify-between h-full">
-          <div class="flex flex-col items-center w-full gap-4">
-            <div class="flex items-center w-full gap-4">
-              <%= svg "images/icons/#{prestation.data.icon}", class: "h-6 text-primary" if prestation.data.icon %>
-              <h2 class="text-2xl"><%= prestation.data.title %></h2>
-            </div>
-            <span class="my-2 text-gray">
-              <%= prestation.data.description %>
-            </span>
-          </div>
-
-          <div class="flex items-center justify-between">
-            <span class="text-primary text-xl font-semibold my-2">
-              <%= prestation.data.price %>
-            </span>
-
-            <% if prestation.data.cta_link %>
-              <button class="btn btn-primary self-end" href="<%= prestation.data.cta_link %>">
-                <%= prestation.data.cta_text %>
-              </button>
-            <% end %>
-
-            <% if prestation.data.know_more %>
-              <button class="btn btn-primary self-end" data-action="click->crisp-chat#show">En savoir plus</button>
-            <% end %>
-          </div>
-        </span>
-      <% end %>
+    <div class="text-center mt-12">
+      <button class="btn btn-outline text-lg px-6 py-3" data-action="click->crisp-chat#show">Parler de mon projet</button>
     </div>
-  </section>
-</div>
+  </div>
+</section>
+
+<!-- PRESTATIONS -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Prestations</h2>
+    <p class="text-center text-gray-700 mb-12 max-w-4xl mx-auto">
+      Chaque projet est unique. Après l'appel découverte, vous recevez un devis personnalisé selon la surface, la complexité et les livrables.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Prestation 1 -->
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-secondary text-2xl font-bold mb-3">Coaching Déco « Flash »</h3>
+        <p class="font-semibold mb-4">Idéal pour débloquer une pièce ou valider des choix.</p>
+
+        <ul class="list-disc text-gray-700 mb-6 px-6">
+          <li>1h30 de coaching (chez vous ou en visio)</li>
+          <li>Diagnostic express : agencement, lumière, volumes</li>
+          <li>Propositions immédiates (croquis d'intention si besoin)</li>
+          <li>Mini‑palette couleurs et pistes matières</li>
+          <li>Liste d'actions prioritaires + références clés</li>
+          <li>Compte‑rendu PDF envoyé sous 48 h</li>
+        </ul>
+
+        <p class="text-gray-700 font-medium">
+          <strong>Livrables :</strong> synthèse actionable + références produits/marques.
+        </p>
+      </div>
+
+      <!-- Prestation 2 -->
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-secondary text-2xl font-bold mb-3">Atelier Couleurs & Matières</h3>
+        <p class="font-semibold mb-4">Pour une harmonie chromatique adaptée à votre lumière, vos usages et vos envies.</p>
+
+        <ul class="list-disc text-gray-700 mb-6 px-6">
+          <li>Relevé de la lumière (orientation, intensité, reflets)</li>
+          <li>Tests d'échantillons et nuanciers sur place</li>
+          <li>Palette couleurs sur‑mesure (murs, menuiseries, plafonds, sols, textiles)</li>
+          <li>Conseils finitions (mat, velours, satin, laque), marques et références précises</li>
+          <li>Associations matières (bois, pierre, carrelage, tissus, métaux)</li>
+          <li>Recommandations par pièce + nuancier personnalisé</li>
+        </ul>
+
+        <p class="text-gray-700 font-medium">
+          <strong>Livrables :</strong> dossier couleurs PDF avec références prêtes à commander.
+        </p>
+      </div>
+
+      <!-- Prestation 3 -->
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-secondary text-2xl font-bold mb-3">Conception d'une pièce</h3>
+        <p class="font-semibold mb-4">Transformer une chambre, un salon, une cuisine ou une salle de bain.</p>
+
+        <ul class="list-disc text-gray-700 mb-6 px-6">
+          <li>Relevé & plan d'état des lieux</li>
+          <li>Plan d'aménagement 2D + vues 3D d'ambiance</li>
+          <li>Palette couleurs & matériaux</li>
+          <li>Sélection mobilier, luminaires & accessoires</li>
+          <li>Liste‑shopping chiffrée + alternatives</li>
+          <li>1 à 2 cycles d'ajustements</li>
+        </ul>
+
+        <p class="text-gray-700 font-medium">
+          <strong>Livrables :</strong> dossier conception complet (PDF) + fichiers plans.
+        </p>
+      </div>
+
+      <!-- Prestation 4 -->
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-secondary text-2xl font-bold mb-3">Projet rénovation / restructuration</h3>
+        <p class="font-semibold mb-4">Accompagnement de A à Z, esthétique & fonctionnel.</p>
+
+        <ul class="list-disc text-gray-700 mb-6 px-6">
+          <li>Étude des circulations et des volumes</li>
+          <li>Plans 2D/3D</li>
+          <li>Cahier des charges artisitiques pour les artisants</li>
+          <li>Palette globale couleurs & matières</li>
+          <li>Suivi esthétique de chantier</li>
+          <li>Accompagnement aux choix sur site</li>
+        </ul>
+
+        <p class="text-gray-700 font-medium">
+          <strong>Livrables :</strong> dossier technique + dossier déco complet.<br>
+          Coordination de chantier possible selon besoin.
+        </p>
+      </div>
+
+      <!-- Prestation 5 -->
+      <div class="bg-white rounded-lg p-8 shadow-sm">
+        <h3 class="text-secondary text-2xl font-bold mb-3">Mise en scène & stylisme final</h3>
+        <p class="font-semibold mb-4">La touche qui change tout pour un rendu magazine.</p>
+
+        <ul class="list-disc text-gray-700 mb-6 px-6">
+          <li>Sélection/achat des accessoires</li>
+          <li>Accrochage, textiles, luminaires, composition des étagères</li>
+          <li>Optimisation des volumes et de la lumière</li>
+        </ul>
+
+        <p class="text-gray-700 font-medium">
+          <strong>Livrables :</strong> intérieur prêt à vivre + check‑list d'entretien.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <button class="btn btn-primary text-lg px-8 py-3" data-action="click->crisp-chat#show">Demander un devis</button>
+    </div>
+  </div>
+</section>
