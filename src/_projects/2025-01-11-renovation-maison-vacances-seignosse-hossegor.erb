@@ -1,0 +1,31 @@
+---
+layout: project
+title: "Une maison de vacances à Seignosse"
+categories: decoration, Seignosse, Hossegor
+image_id: seignosse/salon-cuisine
+image: https://res.cloudinary.com/adrien/image/upload/c_scale,w_600/geraldine-poly/seignosse/salon-cuisine.jpg
+description: Direction artistique d'une maison de vacances à Seignosse.
+---
+
+<div class="flex flex-col gap-4">
+  <div class="flex md:grid-cols-2 gap-4">
+    <%= render CloudinaryImage.new(image_id: "seignosse/avant-apres-maison-de-vacances-seignosse", width: 1200, height: 600, alt: "avant après d'un projet de décoration Seignosse pour une maison de vacances") %>
+  </div>
+
+  <h2 class="mt-8">Le projet :  une maison de vacances à Seignosse</h2>
+  <p>
+  </p>
+  <div class="text-gray mt-4">
+    À Seignosse, j’ai imaginé cette maison de vacances comme un havre lumineux dédié à la convivialité.
+    La palette mêle sable et terracotta, ponctuée de verts et de bleus, en écho à l’océan et à la pinède landaise.
+    Bois, rotin et textiles naturels structurent un espace fluide où cuisine, salle à manger et salon dialoguent.
+    Lignes simples, pièces artisanales et quelques éléments chinés composent une ambiance douce et intemporelle.
+    <br><br>Un décor solaire et ressourçant, pensé pour des moments à partager en famille ou entre amis.
+
+  </div>
+
+  <h2 class="mt-8">Rendu</h2>
+  <%= render CloudinaryImage.new(image_id: "seignosse/banquette", width: 1200, shadow: true, alt: "décoratrice banquette sur mesure habillage salon") %>
+  <%= render CloudinaryImage.new(image_id: "seignosse/cuisine", width: 1200, shadow: true, alt: "décoratrice salon cuisine Seignosse") %>
+  <%= render CloudinaryImage.new(image_id: "seignosse/table", width: 1200, shadow: true, alt: "décoratrice salon cuisine Seignosse") %>
+</div>
